@@ -1,6 +1,13 @@
-# ADLIB
+# libadlib
 
-**ADLIB** (*Authoring and Design Language for Interactive Behavior*) is a small language for
+**ADLIB — Authoring and Design Language for Interactive Behavior**
+
+[![CI](https://github.com/vomitselfie/libadlib/actions/workflows/ci.yml/badge.svg)](https://github.com/vomitselfie/libadlib/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![C++17](https://img.shields.io/badge/C%2B%2B-17-informational.svg)
+![Version](https://img.shields.io/badge/version-0.1.0-brightgreen.svg)
+
+**ADLIB** is a small language for
 describing how game characters behave and react, plus the compiler, tools and runtime around it.
 A **plan** is a set of **behaviours** (states). Each behaviour has **interactors** that react to
 messages and collisions by running **actions**, consulting **decisions**, scheduling timers and
@@ -15,15 +22,25 @@ shipped game and documented so that it can be used again.
 | component | what it is |
 |---|---|
 | **libadlib** | the runtime VM (behaviours, interactors, agenda, message queue, decision paths for lockstep networking), PBN reader/writer, vocabulary loader, host API; C++17, no dependencies |
-| **adlibc** | the compiler, ADLIB source → `.PBN`, byte-identical to the 1996 compiler |
+| **adlibc** | the compiler, ADLIB source → `.PBN`; byte-identical to the 1996 compiler in `--compat=adlib1996` mode |
 | **adlib** (adlib-tools) | `dump`, `decompile`, `graph` (DOT/Mermaid), `inspect`/`lint`, `compare`, `trace` |
+
+```text
+Compiler compatibility (vs. the original 1996 compiler, --compat=adlib1996)
+───────────────────────────────────────────────────────────────────────────
+32 / 32 shipped plans          byte-identical
+17,547 / 17,547 fuzz cases     identical
+185 compatibility fixtures     passing
+```
 
 ## Status and guarantees (v0.1.0)
 
-- **The compiler is byte-exact.** adlibc reproduces the 1996 ADLIB compiler's output for every
-  input it accepts, and its exact diagnostic (message, line, byte offset) for every input it
-  rejects. The evidence was produced against the original executable (HyperBlade's, 1996), run
-  under emulation next to adlibc:
+- **The compiler is byte-exact.** In `--compat=adlib1996` mode, adlibc matches the original 1996
+  compiler byte for byte for accepted inputs and reproduces its diagnostics (message, line, byte
+  offset) for rejected inputs. The default `--compat=adlib` preserves the recovered language while
+  lifting fixed implementation limits that are not part of the language itself. The evidence was
+  produced against the original executable (HyperBlade's, 1996), run under emulation next to
+  adlibc:
   - a compatibility corpus of 185 fixtures (`fixtures/compiler/`) whose expectations are the
     original compiler's results with the package's own symbol files; `ctest` replays them with no
     external data;
@@ -35,7 +52,7 @@ shipped game and documented so that it can be used again.
   lifted) and `--compat=adlib1996` (the 1996 compiler exactly, fixed limits included; refuses input
   the original would crash or hang on). `--strict` warns about historical hazards without changing
   the output.
-- The runtime is the 1996 interpreter, reconstructed from the same executable and made
+- The runtime is an independent reconstruction of the 1996 interpreter semantics, made
   host-agnostic.
 - The language specification ([docs/language.md](docs/language.md)) contains only rules confirmed
   against the original compiler.
@@ -133,8 +150,14 @@ compiler integrated into the game, and networked play that sends "indices into d
 instruction streams" rather than state. HyperBlade shipped the compiler inside the game executable
 and the plans as `.PBN` files. This reconstruction recovered the language from that compiler (by
 static analysis and by running it under emulation), wrote a new compiler that matches it byte for
-byte, extracted the runtime from a source port of the game, and added the tooling the original
-authors listed as goals (checking, graphs, tracing). See [docs/provenance.md](docs/provenance.md).
+byte, reimplemented the runtime's semantics independently (first inside a source port of the game,
+then as this host-agnostic library), and added the tooling the original authors listed as goals
+(checking, graphs, tracing). See [docs/provenance.md](docs/provenance.md).
+
+## Citing
+
+If you use or write about libadlib, please cite it using [CITATION.cff](CITATION.cff) (GitHub's
+"Cite this repository" button).
 
 ## Licence
 

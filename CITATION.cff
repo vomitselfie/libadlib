@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use or refer to this software, please cite it as below."
+type: software
+title: "libadlib: An Independent Reconstruction of the ADLIB Behavior Runtime"
+abstract: >-
+  libadlib is an independent, host-agnostic reconstruction of ADLIB (Authoring and Design Language
+  for Interactive Behavior), the behaviour language, compiler and runtime created by Stuart Rosen
+  and Robert Duisberg at Wizbang! and used in Activision's HyperBlade (1996). It provides the
+  runtime VM, a compiler (adlibc) that matches the original 1996 compiler byte for byte in its
+  historical-compatibility mode, and inspection tools. This is a software artifact; it contains no
+  code or data from the original game.
+authors:
+  - name: "The ADLIB reconstruction contributors"
+version: 0.1.0
+date-released: 2026-10-03
+license: MIT
+repository-code: "https://github.com/vomitselfie/libadlib"
+keywords:
+  - ADLIB
+  - game AI
+  - behaviour language
+  - virtual machine
+  - software preservation
+  - reverse engineering
+  - HyperBlade
+references:
+  - type: magazine-article
+    title: "Bringing Life to HyperBlade"
+    authors:
+      - given-names: Stuart
+        family-names: Rosen
+      - given-names: Robert
+        family-names: Duisberg
+    journal: "Game Developer"
+    year: 1996
+    month: 8
+    notes: "Aug/Sep 1996 issue, pp. 22-25. Describes ADLIB's language, authoring environment and runtime."
