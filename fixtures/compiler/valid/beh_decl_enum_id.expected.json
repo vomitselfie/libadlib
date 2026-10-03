@@ -1,0 +1,37 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "787b25cc19729434a310d9c02300398c5b9a0a72d93b4dd5689b460d7008ed64",
+  "pbn_words": [
+    "00000009",
+    "abcdefff",
+    "00070000",
+    "00000002",
+    "00000006",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(2)",
+    "  6 /*id_BEH_SignalCoi*/",
+    "  \"S\"",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "found_by": "grammar probe [beh_decl_enum_id]: _6_ passes the identifier test.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "787b25cc19729434a310d9c02300398c5b9a0a72d93b4dd5689b460d7008ed64"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "787b25cc19729434a310d9c02300398c5b9a0a72d93b4dd5689b460d7008ed64"
+  },
+  "adlibc_agrees": true
+}

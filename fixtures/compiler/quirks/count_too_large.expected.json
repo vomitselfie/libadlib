@@ -1,0 +1,37 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "b67146f155e6714d69b70e631ddae44eeeef4e65c9781f1e9b388366c12d6727",
+  "pbn_words": [
+    "0000000d",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00180000",
+    "00000009",
+    "00000007",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": null,
+  "expected_from": "oracle",
+  "mechanism": "Count larger than the children present: compiles; the tree is broken (runtime problem only).",
+  "found_by": "grammar probe [count_too_large]: Count larger than the children present: compiles; the tree is broken (runtime problem only).",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "b67146f155e6714d69b70e631ddae44eeeef4e65c9781f1e9b388366c12d6727"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "b67146f155e6714d69b70e631ddae44eeeef4e65c9781f1e9b388366c12d6727"
+  },
+  "adlibc_agrees": true
+}

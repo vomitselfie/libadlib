@@ -1,0 +1,20 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "tok_len_str_43.txt:3: error [compile/crash] (byte 112): string token of 43 bytes (40 or more, quotes included) overflows a 40-byte buffer; the original compiler would crash",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "adlibc (the original compiler crashes on this input)",
+  "found_by": "grammar probe [tok_len_str_43]: String token of 43 bytes including quotes (EmitLeaf token buffer overflow probe).",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "fault",
+    "diagnostic": "tok_len_str_43.txt:3: error [compile/fault] (byte 112): emulation fault Invalid memory fetch (UC_ERR_FETCH_UNMAPPED) at eip=0x78",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "tok_len_str_43.txt:3: error [compile/crash] (byte 112): string token of 43 bytes (40 or more, quotes included) overflows a 40-byte buffer; the original compiler would crash",
+    "pbn_sha256": null
+  }
+}

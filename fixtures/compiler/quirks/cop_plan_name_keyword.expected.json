@@ -1,0 +1,39 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "611cc72c9cd7e0226bd35d76c1e5ee54e0d974e237fbbd7f86b6a46c51fc6e4c",
+  "pbn_words": [
+    "0000000f",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000001",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00160000",
+    "00000002",
+    "abcdefff",
+    "80000000",
+    "00000001",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": null,
+  "expected_from": "oracle",
+  "mechanism": "CHANGE_OF_PLAN takes its plan name from the buffer that every non-string token overwrites with its keyword-table entry: with the keyword Enable in the plan-name position the sibling compiled is Data\\\\Plans\\\\Enable.txt.",
+  "found_by": "adlibc development (2026-10): CHANGE_OF_PLAN takes its plan name from the buffer that every non-string token overwrites with its keyword-table entry: with the keyword Enable in the plan-name position the sibling compiled is Data\\\\Plans\\\\Enable.txt.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "611cc72c9cd7e0226bd35d76c1e5ee54e0d974e237fbbd7f86b6a46c51fc6e4c"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "611cc72c9cd7e0226bd35d76c1e5ee54e0d974e237fbbd7f86b6a46c51fc6e4c"
+  },
+  "adlibc_agrees": true
+}

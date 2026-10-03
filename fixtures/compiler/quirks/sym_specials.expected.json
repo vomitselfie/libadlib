@@ -1,0 +1,55 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "b6373496e7847da4c1ece8e1b85494539822c057b54aa06dce2cefaa83dbc93c",
+  "pbn_words": [
+    "00000013",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00180000",
+    "00000007",
+    "00000007",
+    "0000ffff",
+    "abcdabcd",
+    "abcdabcc",
+    "abcdabce",
+    "abcdabcb",
+    "abcdabca",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  DO_ACTION(7)",
+    "    7 /*id_ACF_Probe*/",
+    "    _BROADCAST_",
+    "    _STRAIGHTAHEAD_",
+    "    _TEMPORARILY_",
+    "    _MESSAGE_DATA_",
+    "    _NO_BEH_CHANGE_",
+    "    _PREVIOUS_BEH_",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "found_by": "grammar probe [sym_specials]",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "b6373496e7847da4c1ece8e1b85494539822c057b54aa06dce2cefaa83dbc93c"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "b6373496e7847da4c1ece8e1b85494539822c057b54aa06dce2cefaa83dbc93c"
+  },
+  "adlibc_agrees": true
+}

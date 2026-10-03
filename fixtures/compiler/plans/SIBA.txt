@@ -1,0 +1,3 @@
+DECLARE_BEHAVIOR 2 id_BEH_StandStill "One"
+DECLARE_BEHAVIOR 2 id_BEH_StandStill "Two"
+END_PLAN

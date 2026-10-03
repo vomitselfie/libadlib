@@ -1,0 +1,2 @@
+DECLARE_BEHAVIOR 2 id_MSG_Initiate "SitStill"
+END_PLAN

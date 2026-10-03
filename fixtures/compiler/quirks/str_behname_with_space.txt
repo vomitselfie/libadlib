@@ -1,0 +1,3 @@
+DECLARE_BEHAVIOR 3 id_BEH_StandStill "Sit_There"
+CHANGE_TO_BEHAVIOR 1 "Sit_There"
+END_PLAN

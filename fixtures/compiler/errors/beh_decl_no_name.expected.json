@@ -1,0 +1,21 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "beh_decl_no_name.txt:2: error [compile/throw] (byte 40): Expected a string name in Behavior Declaration.\n",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "grammar probe [beh_decl_no_name]",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "beh_decl_no_name.txt:2: error [compile/throw] (byte 40): Expected a string name in Behavior Declaration.\n",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "beh_decl_no_name.txt:2: error [compile/throw] (byte 40): Expected a string name in Behavior Declaration.",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

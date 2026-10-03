@@ -1,0 +1,38 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "dadac0f9d53a4dd5bf7737741a7357078494d9d532bd0a8f51cc5f1faedb7945",
+  "pbn_words": [
+    "00000009",
+    "abcdefff",
+    "00070000",
+    "40000000",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(0)",
+    "7",
+    "\"S\"",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "Counts are ordinary leaves: 2.0 is stored as float bits.",
+  "found_by": "grammar probe [count_float]: Counts are ordinary leaves: 2.0 is stored as float bits.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "dadac0f9d53a4dd5bf7737741a7357078494d9d532bd0a8f51cc5f1faedb7945"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "dadac0f9d53a4dd5bf7737741a7357078494d9d532bd0a8f51cc5f1faedb7945"
+  },
+  "adlibc_agrees": true
+}

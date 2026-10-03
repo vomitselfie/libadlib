@@ -1,0 +1,54 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "383f0610750b50e8f0578f44c54e6b2b0a55f7516aa9578da54a2845f96b54c9",
+  "pbn_words": [
+    "00000014",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000041",
+    "00000000",
+    "abcdefff",
+    "00070002",
+    "00000001",
+    "00000000",
+    "abcdefff",
+    "00070000",
+    "00000002",
+    "00000007",
+    "abcdeffe",
+    "00000041",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"A\"",
+    "  CHANGE_TO_BEHAVIOR(1)",
+    "    0 /*behavior \"A\"*/",
+    "DECLARE_BEHAVIOR(2)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"A\"",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "Duplicate behaviour names: no error, first wins.",
+  "found_by": "grammar probe [beh_dup_name]: Duplicate behaviour names: no error, first wins.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "383f0610750b50e8f0578f44c54e6b2b0a55f7516aa9578da54a2845f96b54c9"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "383f0610750b50e8f0578f44c54e6b2b0a55f7516aa9578da54a2845f96b54c9"
+  },
+  "adlibc_agrees": true
+}

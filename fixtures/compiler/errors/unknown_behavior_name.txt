@@ -1,0 +1,3 @@
+DECLARE_BEHAVIOR 3 id_BEH_StandStill "SitStill"
+  CHANGE_TO_BEHAVIOR 1 "Nowhere"
+END_PLAN

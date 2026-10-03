@@ -1,0 +1,63 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "5ba0a8b540600b6fde4d02f1c24dbe247c95d216acf51e2e2fc8f194a1b00697",
+  "pbn_words": [
+    "0000001b",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00050000",
+    "00000002",
+    "0000000d",
+    "abcdefff",
+    "80000000",
+    "00000001",
+    "abcdefff",
+    "00170001",
+    "00000003",
+    "00000002",
+    "abcdefff",
+    "20000000",
+    "00000001",
+    "00000005",
+    "abcdefff",
+    "40000000",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  SET_MESSAGE_INTERACTOR(2)",
+    "    13 /*id_MSG_Initiate*/",
+    "    Enable(1)",
+    "      DECIDE_BY_WITH_AMONG(3)",
+    "        2 /*id_DCF_Choose*/",
+    "        DataBlock(1)",
+    "          5",
+    "        Block(0)",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "found_by": "grammar probe [unused_datablock_block]",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "5ba0a8b540600b6fde4d02f1c24dbe247c95d216acf51e2e2fc8f194a1b00697"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "5ba0a8b540600b6fde4d02f1c24dbe247c95d216acf51e2e2fc8f194a1b00697"
+  },
+  "adlibc_agrees": true
+}

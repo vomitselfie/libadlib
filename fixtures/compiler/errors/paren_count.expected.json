@@ -1,0 +1,20 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "paren_count.txt:3: error [compile/throw] (byte 58): Expected an argument enumerator.\n",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "paren_count.txt:3: error [compile/throw] (byte 58): Expected an argument enumerator.\n",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "paren_count.txt:3: error [compile/throw] (byte 58): Expected an argument enumerator.",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

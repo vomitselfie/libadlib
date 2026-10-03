@@ -1,0 +1,54 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "6d11bd4578cbf12fbfb7c9167ee16a663eeb17d637bd94cb8fa584fe7b6bdf3d",
+  "pbn_words": [
+    "00000012",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00180000",
+    "00000006",
+    "00000007",
+    "43160000",
+    "41c80000",
+    "3f000000",
+    "3f800000",
+    "43160000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  DO_ACTION(6)",
+    "    7 /*id_ACF_Probe*/",
+    "    150.0f",
+    "    25.0f",
+    "    0.5f",
+    "    1.0f",
+    "    150.0f",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "MSVC's atof accepts d/D as an exponent marker and ignores an exponent without digits: 1.5d2 = 150.0, .5e = 0.5, 1.e+ = 1.0; trailing junk after a valid prefix is ignored.",
+  "found_by": "adlibc development (2026-10): MSVC's atof accepts d/D as an exponent marker and ignores an exponent without digits: 1.5d2 = 150.0, .5e = 0.5, 1.e+ = 1.0; trailing junk after a valid prefix is ignored.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "6d11bd4578cbf12fbfb7c9167ee16a663eeb17d637bd94cb8fa584fe7b6bdf3d"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "6d11bd4578cbf12fbfb7c9167ee16a663eeb17d637bd94cb8fa584fe7b6bdf3d"
+  },
+  "adlibc_agrees": true
+}

@@ -1,0 +1,2 @@
+DECLARE_BEHAVIOR,2 id_BEH_SignalCoi "Idle" 6 DECLARE_BEHAVIOR _2_ id_BEH_Res "Go
+      END_PLAN

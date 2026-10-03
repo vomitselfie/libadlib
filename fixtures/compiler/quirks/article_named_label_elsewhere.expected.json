@@ -1,0 +1,46 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "d0c7814da13d246335f6b6768d390d3151f8ab30dafcdbb1f3348b4731dbcdf7",
+  "pbn_words": [
+    "0000000e",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00180000",
+    "00000002",
+    "00000006",
+    "00000001",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  DO_ACTION(2)",
+    "    6 /*id_ACF_PlayTone*/",
+    "    1",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "Unknown words ending in \":\" are dropped by the emitter (keyword lookup fails, nothing emitted).",
+  "found_by": "grammar probe [article_named_label_elsewhere]: Unknown words ending in \":\" are dropped by the emitter (keyword lookup fails, nothing emitted).",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "d0c7814da13d246335f6b6768d390d3151f8ab30dafcdbb1f3348b4731dbcdf7"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "d0c7814da13d246335f6b6768d390d3151f8ab30dafcdbb1f3348b4731dbcdf7"
+  },
+  "adlibc_agrees": true
+}

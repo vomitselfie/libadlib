@@ -1,0 +1,5 @@
+DECLARE_BEHAVIOR 3 id_BEH_StandStill "SitStill"
+  SET_MESSAGE_INTERACTOR 2 id_MSG_Initiate
+    Enable 1
+      DO_ACTION 2 id_ACF_NoSuchAction 0
+END_PLAN

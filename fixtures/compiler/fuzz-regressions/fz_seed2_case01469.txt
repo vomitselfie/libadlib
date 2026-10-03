@@ -1,0 +1,10 @@
+GLOBAL_INTERACTORS 2 }
+      SET_MESSAGE_INTERACTOR 2 id_MSG_HumSinkBe
+    Enable "0" SET_MESSAGE_INTERACTOR 2 id_MSG_CountShakeBeepSpin
+  CHANGE_TO_BEHAVIOR 4 1 "Go" DECLARE_BEHAVIOR 4 AA_SitAndWait "Go"
+    SET_BEHAVIOR_PARAM 0x2 id_SET_InteractorLatency // c
+"SlowGliding" 3. 2 id_MSG_StepBellRin Enable 2
+  REMOVE_AGENDA_ITEM 1 /* c */
+id_AGD_RestLampStepG
+     SET_BEHAVIOR_PARAM 2 id_SET_LampLampRiseBlin 0x _3_
+   END_PLAN

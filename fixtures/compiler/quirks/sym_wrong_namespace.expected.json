@@ -1,0 +1,44 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "80cd0872d41cc8347f2c218ebb26055cbd7aa12c9708f347147aed20bfd0f956",
+  "pbn_words": [
+    "0000000d",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00180000",
+    "00000001",
+    "0000000d",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  DO_ACTION(1)",
+    "    13 /*id_ACF_RiseGlowPullWav*/",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "No namespace checking: an id_MSG_ value in the ACF slot compiles.",
+  "found_by": "grammar probe [sym_wrong_namespace]: No namespace checking: an id_MSG_ value in the ACF slot compiles.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "80cd0872d41cc8347f2c218ebb26055cbd7aa12c9708f347147aed20bfd0f956"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "80cd0872d41cc8347f2c218ebb26055cbd7aa12c9708f347147aed20bfd0f956"
+  },
+  "adlibc_agrees": true
+}

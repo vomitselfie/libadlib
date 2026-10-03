@@ -1,0 +1,44 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "71fed6012ae67ff4f8ac564d8b18a983b6505f1f0e42c79de36372e8d1acbf6b",
+  "pbn_words": [
+    "00000014",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00070003",
+    "abcdeffe",
+    "00000054",
+    "00000068",
+    "00000065",
+    "00000047",
+    "0000006f",
+    "00000061",
+    "0000006c",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": null,
+  "expected_from": "oracle",
+  "mechanism": "Article line 2 inside a valid behaviour: \"Target:\" is an unknown word (ignored), so SET_BEHAVIOR_PARAM gets no count and the string becomes its count slot.",
+  "found_by": "grammar probe [article_body_only]: Article line 2 inside a valid behaviour: \"Target:\" is an unknown word (ignored), so SET_BEHAVIOR_PARAM gets no count and the string becomes its count slot.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "71fed6012ae67ff4f8ac564d8b18a983b6505f1f0e42c79de36372e8d1acbf6b"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "71fed6012ae67ff4f8ac564d8b18a983b6505f1f0e42c79de36372e8d1acbf6b"
+  },
+  "adlibc_agrees": true
+}

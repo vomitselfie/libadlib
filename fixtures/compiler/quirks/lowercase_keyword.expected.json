@@ -1,0 +1,42 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "c5af49226fc124200178ee99f6002be9d968c7860f35b12123429473518469ac",
+  "pbn_words": [
+    "0000000e",
+    "00000002",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000069",
+    "00000074",
+    "00000053",
+    "00000074",
+    "00000069",
+    "0000006c",
+    "0000006c",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "2",
+    "7",
+    "\"SitStill\"",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "Keywords are matched case-sensitively; 'Declare_Behavior' is not a keyword and, like any unknown word, emits nothing (the count and arguments that follow are still emitted as bare leaves). Not case normalisation: the keyword is silently dropped.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "c5af49226fc124200178ee99f6002be9d968c7860f35b12123429473518469ac"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "c5af49226fc124200178ee99f6002be9d968c7860f35b12123429473518469ac"
+  },
+  "adlibc_agrees": true
+}

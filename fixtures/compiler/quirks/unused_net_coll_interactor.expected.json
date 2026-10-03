@@ -1,0 +1,50 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "c3d158e97fb12ad91ab8eaa42435662af7eaeb7004d51819b0e2b40516803d5b",
+  "pbn_words": [
+    "00000011",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00050002",
+    "00000003",
+    "00000001",
+    "00000002",
+    "abcdefff",
+    "80000000",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  SET_NET_MESSAGE_INTERACTOR(3)",
+    "    1 /*id_MSG_Pong*/",
+    "    2",
+    "    Enable(0)",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "Exe table gives it id 0x50002 (= SET_NET_MESSAGE_INTERACTOR).",
+  "found_by": "grammar probe [unused_net_coll_interactor]: Exe table gives it id 0x50002 (= SET_NET_MESSAGE_INTERACTOR).",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "c3d158e97fb12ad91ab8eaa42435662af7eaeb7004d51819b0e2b40516803d5b"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "c3d158e97fb12ad91ab8eaa42435662af7eaeb7004d51819b0e2b40516803d5b"
+  },
+  "adlibc_agrees": true
+}

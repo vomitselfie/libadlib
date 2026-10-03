@@ -1,0 +1,27 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "fz_seed5_case04106.txt:2: error [compile/throw] (byte 81): Inability to read string: \"Go",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "adlib_fuzz.py --seed 5 (case 4106)",
+  "at_discovery": {
+    "oracle": "accepted",
+    "oracle_pbn": "32000000ffefcdab000007000200000011000000feefcdab49000000640000006c000000650000000000000006000000ffefcdab000007000200000003000000feefcdab470000006f00000000000000450000004800000020000000460000006c00000079000000000000004100000056000000490000004f00000052000000000000004c000000410000004e0000000000000079000000000000004100000056000000490000004f00000052000000000000006f000000610000006c00000000000000ffefcdab0000ffff",
+    "adlibc": "FUZZ.txt:2: error [compile/throw] (byte 81): Inability to read string: \"Go",
+    "adlibc_pbn": null
+  },
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "fz_seed5_case04106.txt:2: error [compile/throw] (byte 81): Inability to read string: \"Go",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "fz_seed5_case04106.txt:2: error [compile/throw] (byte 81): Inability to read string: \"Go",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

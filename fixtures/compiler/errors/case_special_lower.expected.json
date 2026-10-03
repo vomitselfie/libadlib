@@ -1,0 +1,21 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "case_special_lower.txt:3: error [compile/throw] (byte 80): Bad plan id value: _no_beh_change_",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "grammar probe [case_special_lower]: Special constants are matched case-sensitively.",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "case_special_lower.txt:3: error [compile/throw] (byte 80): Bad plan id value: _no_beh_change_",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "case_special_lower.txt:3: error [compile/throw] (byte 80): Bad plan id value: _no_beh_change_",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

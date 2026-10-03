@@ -1,0 +1,46 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "a2d2caaa3737129e3c36e4c1a2cbc7015119ba569f3e4e235ff21a70f8855158",
+  "pbn_words": [
+    "0000000e",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00180000",
+    "00000002",
+    "00000007",
+    "ffffffff",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  DO_ACTION(2)",
+    "    7 /*id_ACF_Probe*/",
+    "    -1",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "atol overflow behaviour (MSVC atol).",
+  "found_by": "grammar probe [num_big]: atol overflow behaviour (MSVC atol).",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "a2d2caaa3737129e3c36e4c1a2cbc7015119ba569f3e4e235ff21a70f8855158"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "a2d2caaa3737129e3c36e4c1a2cbc7015119ba569f3e4e235ff21a70f8855158"
+  },
+  "adlibc_agrees": true
+}

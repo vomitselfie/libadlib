@@ -1,0 +1,7 @@
+{
+  "lowercase_keyword": "Keywords are matched case-sensitively; 'Declare_Behavior' is not a keyword and, like any unknown word, emits nothing (the count and arguments that follow are still emitted as bare leaves). Not case normalisation: the keyword is silently dropped.",
+  "unknown_keyword": "Words that are not keywords and lack an identifier prefix (id, _, A_, AA_) emit nothing but still advance the position counters used for behaviour-name resolution.",
+  "wrong_enum_namespace": "Identifiers resolve to their integer value in whichever enum declares them; the compiler does no namespace/type check, so id_MSG_Initiate in a behaviour-type slot emits that message's number.",
+  "wrong_child_count_too_large": "Counts are ordinary values written by the author; the compiler performs no arity checking, so an over-count is emitted verbatim and yields a malformed tree (the runtime would consume following nodes as children).",
+  "wrong_child_count_too_small": "As above: an under-count is emitted verbatim; trailing items become siblings at the parent level."
+}

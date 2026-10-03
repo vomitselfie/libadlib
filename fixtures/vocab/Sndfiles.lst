@@ -1,0 +1,4 @@
+# sound list: <name> <duration ms> <type>
+Chime1 500 0
+Whistle1 999 0
+Buzzer2 800 1

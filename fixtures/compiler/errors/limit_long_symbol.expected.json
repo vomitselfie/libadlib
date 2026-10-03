@@ -1,0 +1,20 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "limit_long_symbol.txt:4: error [compile/crash] (byte 142): a token of 44 or more bytes overwrites the prescan's return address; the original compiler would crash",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "adlibc (the original compiler crashes on this input)",
+  "found_by": "grammar probe [limit_long_symbol]: Very long identifier (token buffers are ~40 bytes on the stack).",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "fault",
+    "diagnostic": "limit_long_symbol.txt:4: error [compile/fault] (byte 142): emulation fault Invalid memory fetch (UC_ERR_FETCH_UNMAPPED) at eip=0x51515151",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "limit_long_symbol.txt:4: error [compile/crash] (byte 142): a token of 44 or more bytes overwrites the prescan's return address; the original compiler would crash",
+    "pbn_sha256": null
+  }
+}

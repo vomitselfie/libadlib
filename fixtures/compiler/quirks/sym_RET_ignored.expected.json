@@ -1,0 +1,44 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "484744a7fee825c91b2fd1f9a34344733fcbcad7b9f86efd81e3a6cfea30e2ae",
+  "pbn_words": [
+    "0000000d",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00180000",
+    "00000002",
+    "00000007",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  DO_ACTION(2)",
+    "    7 /*id_ACF_Probe*/",
+    "    END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "RET_* enum names do not start with id/_/A_/AA_: treated as unknown words and silently dropped.",
+  "found_by": "grammar probe [sym_RET_ignored]: RET_* enum names do not start with id/_/A_/AA_: treated as unknown words and silently dropped.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "484744a7fee825c91b2fd1f9a34344733fcbcad7b9f86efd81e3a6cfea30e2ae"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "484744a7fee825c91b2fd1f9a34344733fcbcad7b9f86efd81e3a6cfea30e2ae"
+  },
+  "adlibc_agrees": true
+}

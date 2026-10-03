@@ -1,0 +1,1702 @@
+{
+  "about": "ADLIB compiler compatibility corpus. Every expectation was produced by the original 1996 ADLIB compiler (the routine inside HYPERX.EXE identified by \"binary\", run under emulation) with the symbol files in fixtures/vocab.",
+  "generator": "freeze.py --package (maintainer tool, not part of this package)",
+  "environment": {
+    "python": "3.14.7",
+    "unicorn": "2.1.4"
+  },
+  "binary": {
+    "path": "HYPERX.EXE",
+    "size": 1359872,
+    "sha256": "08c7b7a462847089d41a4e3ac0d61df3409ec8c9107cb97deff08364c4c0de60"
+  },
+  "vocabulary": [
+    {
+      "path": "fixtures/vocab/Infobtxt.lst",
+      "size": 90,
+      "sha256": "0b2d394f8a11c66597de042968ebe06ca12b26f78775bc208d05aa09ec6f48f4"
+    },
+    {
+      "path": "fixtures/vocab/Sndfiles.lst",
+      "size": 88,
+      "sha256": "6e67064e46e322f7c1953b9f478a3c3257ac38acf040837d3dc486569a6027e1"
+    },
+    {
+      "path": "fixtures/vocab/enumIDs.h",
+      "size": 2566,
+      "sha256": "f2c7b45a8eb1cdeed6c3c4999e0ecc3c85833cecaa01839c32e8cf0649ae2387"
+    },
+    {
+      "path": "fixtures/vocab/AnimData/Animassm.txt",
+      "size": 234,
+      "sha256": "176844bed71c089fbf48505c2e249d79844f4fd0d8a36f215e0f5ca276a10a25"
+    }
+  ],
+  "diagnostics": [
+    {
+      "path": "fixtures/compiler/valid/base_minimal_crlf.txt",
+      "size": 52,
+      "sha256": "04c949e78dac186d8fcae9caee5b9ada3c272bc70c888e65644eb40801552fa9",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/base_minimal_lf.txt",
+      "size": 50,
+      "sha256": "95cee800c2f5d8dfd2099f40ea9f0ef91fa7b4a500ce7738530fbfbe4f0b0c17",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/base_no_final_newline.txt",
+      "size": 50,
+      "sha256": "ce42d23f2b2a5f11251da286ec92f92fe00838b8dbb41084d7c136a9a4441305",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/base_one_line.txt",
+      "size": 49,
+      "sha256": "d35d06d6ef49e808d2a1138dc8f753e512f353e9d831dbd34bcde3e8482c7d9b",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/base_tabs_blank_lines.txt",
+      "size": 69,
+      "sha256": "6911e18235abec2ed5caca9c7e65b6d18397d0e50d0b2a371ae2cb43218646bf",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/beh_decl_enum_id.txt",
+      "size": 38,
+      "sha256": "03911605d2c421149f9aa167a0e9d3db9615217bfc96aefb0d4a0402dacc6cc3",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "787b25cc19729434a310d9c02300398c5b9a0a72d93b4dd5689b460d7008ed64"
+    },
+    {
+      "path": "fixtures/compiler/valid/case_symbol_mixed.txt",
+      "size": 52,
+      "sha256": "e7d6530cfd466fecbfc6da862e16093a647de9ab6ea3e8079a6bfc00e0ae57d3",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/cmt_glued.txt",
+      "size": 55,
+      "sha256": "a66e45cbfec1bd771e8557e932d4bb8b3e1422de0544cfd36d469c6e5e0b73c4",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/cmt_hash.txt",
+      "size": 83,
+      "sha256": "d833ea8f26496ca56299edd49825e0492a466f9a19bb0b958c1a151b9d193317",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/cmt_paren_rest_of_line.txt",
+      "size": 68,
+      "sha256": "11e9e0901faedd3e38efa810b6b5a7ec096cb957fc30772d82d0a6f0ed274206",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/cmt_slashslash.txt",
+      "size": 75,
+      "sha256": "36bf41d6f5fe45ec8892e2514de852e13ec03e68d042879f9601bfbf4e0651ef",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/count_bit15.txt",
+      "size": 56,
+      "sha256": "d562044bcb9aa5a0c0c129a9a7a572b4188adceb8f90fef43f408bf1614e32f0",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "b2f22d44a018a72f7d2db084fd1e9849b13012950115ffe5209ef96e432eb957"
+    },
+    {
+      "path": "fixtures/compiler/valid/count_enumerator_form.txt",
+      "size": 54,
+      "sha256": "bf0e4a06d7b3e95186bdfeff89c3cfc8eef5767d772b4519d8ce3eafbc67d674",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/count_hex.txt",
+      "size": 54,
+      "sha256": "e224588e10cc1936cf50fa4c4950ab798383b9ea432cc81187d530786efd3fa2",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/sep_ampersand.txt",
+      "size": 49,
+      "sha256": "93b5b1e4ba3fe0665b3593be93e694bf92fa3f7c65c9483272f4e56f6530f703",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/sep_commas.txt",
+      "size": 49,
+      "sha256": "435207c176d27ff27160651fe675a3e523a5b46753c392f802d59f64a397d895",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/sep_semicolon.txt",
+      "size": 53,
+      "sha256": "679f37c3b39662d3edc4b95d544ff3ca29d695cd349acfb619aace6087e1d0b4",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/valid/tok_len_prescan_30.txt",
+      "size": 79,
+      "sha256": "500c25542dda2c87ae0c65c689168b726ce3e3dd5ea73f399391b55684cabd2e",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "76bc58d85b1475a62e5f3994389deeda4fa083e4b2676d306551bada580f8776"
+    },
+    {
+      "path": "fixtures/compiler/valid/tok_len_prescan_31.txt",
+      "size": 80,
+      "sha256": "9f4ea8b2f79256649ded9b80d74808ad948426b8ab58681e484cc4e146b979df",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "6f7e6e824a8190aa3f080f1fe8c2de62282092994807fb13726ec63eb9b53c2e"
+    },
+    {
+      "path": "fixtures/compiler/valid/tok_len_prescan_32.txt",
+      "size": 81,
+      "sha256": "32ebccffff6684ba49363374632092e93f7e6d574bff5d5e90d544f42b4edd81",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "82740d2e2b64c65b35bc5dee008124c2515076bd10b0f5ff0d7732056541b2b0"
+    },
+    {
+      "path": "fixtures/compiler/valid/tok_len_prescan_33.txt",
+      "size": 82,
+      "sha256": "ca09422ec9cf59568ee99e96583d60b62e7a45c0b01355a24e84d1c38b4349cb",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "9e921b84dc0237b69c78edf8c7f43fcf98081489b308e893ac90c9eafd882e97"
+    },
+    {
+      "path": "fixtures/compiler/valid/unused_debug_trace.txt",
+      "size": 82,
+      "sha256": "7654aba452f8ad83d1a5965f7a4d4cdd318feb704fd9ac88fd931eec76ddcc81",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "22ec8cd0ffcc5e1d2cf03ad56e60b55979acdd5a11b79f7982f24767974722e5"
+    },
+    {
+      "path": "fixtures/compiler/valid/unused_global_interactors_empty.txt",
+      "size": 74,
+      "sha256": "c9a230e00af8d6432e9b6a82659a100d0dd59438ea558617895cb732a43c0265",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "dc72c29a0361fa9f77d7f3ef511a090f266835a654d779beef7ddd11b3194734"
+    },
+    {
+      "path": "fixtures/compiler/valid/unused_interactor_name.txt",
+      "size": 238,
+      "sha256": "920bfcfa29e050adaf5bf1bd85e84dc2729c83aad04bd4e56e911ab9f19162fb",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "884bf8d60f097ac68698a51e201a3feb967fe0bcd822e04fc05bd7479ca3340d"
+    },
+    {
+      "path": "fixtures/compiler/valid/unused_loc_coll_interactor.txt",
+      "size": 134,
+      "sha256": "3c648d4022a6f61fa6b57ff6cf757b9b462169bdc7b3a3d44821b1eaedb85b6d",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "c576f71c3c455fb6e3e02ec931b9d4084988763781b26863a48b37c60cc51dae"
+    },
+    {
+      "path": "fixtures/compiler/valid/unused_loc_msg_interactor.txt",
+      "size": 134,
+      "sha256": "92c0e5fe283700f5134078aa0b8cba5e50f3cea1e9b6267dc70937f8f6bf9eff",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "d64e711239d803fede1c8c6f4748d99b94238d6011cf8b3e52f7731395b42251"
+    },
+    {
+      "path": "fixtures/compiler/valid/unused_local_reals_enumerator.txt",
+      "size": 85,
+      "sha256": "fe348c1451316cfeabaa74e7139a8df57172b4abc8bee258f4526ec3ff8f04e0",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "0071f8fe8cd29798e440f98ef2ca159a8794daafdd0c43eb6343d2dc1c94168d"
+    },
+    {
+      "path": "fixtures/compiler/valid/unused_net_msg_interactor.txt",
+      "size": 108,
+      "sha256": "105d2bb99fcdd07408080f99ef50e3f3df9700501ca2a362008af0d18babc111",
+      "category": "valid",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "6b1b7b140cd6d431b33eeacc113283f5d965df32f0380a747510185b24bb181d"
+    },
+    {
+      "path": "fixtures/compiler/quirks/article_body_only.txt",
+      "size": 90,
+      "sha256": "c703a625908358d22c6590c1c74d8e8a2154fdb49a9cb958cee09282a2bfb8c3",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "71fed6012ae67ff4f8ac564d8b18a983b6505f1f0e42c79de36372e8d1acbf6b"
+    },
+    {
+      "path": "fixtures/compiler/quirks/article_named_label_elsewhere.txt",
+      "size": 112,
+      "sha256": "05942c4a0fd74e46dd37dc01c46060547357fe50528c922a4927ae61b6541d02",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "d0c7814da13d246335f6b6768d390d3151f8ab30dafcdbb1f3348b4731dbcdf7"
+    },
+    {
+      "path": "fixtures/compiler/quirks/base_tokens_after_end.txt",
+      "size": 57,
+      "sha256": "4451ee0379a988f2517fdaa7f154e37673b99ff96a159bc91298c7ef454aa217",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "4f720fd7fc29b08bb769490b3aeae67bbc86fa3b7f648f87bf69902e17ae3156"
+    },
+    {
+      "path": "fixtures/compiler/quirks/beh_61_overflow.txt",
+      "size": 1920,
+      "sha256": "3ef15d849d86ec35b6a3b742c6c33b307204a042d396a11f44d03cfe051ff354",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "bce5742530ab3d67541c7282ef663700cdce7e44881cee8d5d955c676380085a"
+    },
+    {
+      "path": "fixtures/compiler/quirks/beh_dup_name.txt",
+      "size": 120,
+      "sha256": "d8388ad6aa3fdd07b3563db0fb2cd903ce0f094d3ec24891b51e68076a0fc38e",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "383f0610750b50e8f0578f44c54e6b2b0a55f7516aa9578da54a2845f96b54c9"
+    },
+    {
+      "path": "fixtures/compiler/quirks/beh_name_spill.txt",
+      "size": 101,
+      "sha256": "77e6395d997a3d19d7806daae24a0d1128726a6578ec870c255264f4c9c26b46",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "a7e7c9970914c92bd99d3308f6d8291efa789553e91b5b65a6c6debe8b1903fd"
+    },
+    {
+      "path": "fixtures/compiler/quirks/beh_ref_ctb_count2.txt",
+      "size": 82,
+      "sha256": "1cd55fb00cfc44d2133d4e580b4bbddc544f763ef1c86bf6263f56f340f75f67",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "d5dc1e1f26f91fc7a451f4e63a7718af734fb1504c8a938e211b6069157c663d"
+    },
+    {
+      "path": "fixtures/compiler/quirks/beh_ref_forward.txt",
+      "size": 120,
+      "sha256": "16a1f136349d98c156818295d995ef21bfd1bdf0c15520287fffeef00aab6dd2",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "d4afd6830914ee70103c0e426204ad65d66388c0219b0b12cf57056fa86921d4"
+    },
+    {
+      "path": "fixtures/compiler/quirks/beh_ref_label_shift.txt",
+      "size": 86,
+      "sha256": "58ecc0ce94d275650490c25a86309c3c0aa7138ff67e61a8b9b94ed5e5c6bfe8",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "2ee7ac88499ec187d4dd817402c43d97216ce8ca120b8998032f2218f1572645"
+    },
+    {
+      "path": "fixtures/compiler/quirks/beh_ref_numeric.txt",
+      "size": 76,
+      "sha256": "9c565a7e4ea36f3ae3620649af7913cb25784a454173ed60eebef52a3f478172",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "e2b53a81bd03e37b236516cd791a8de409ded0dab1198fad0ab52a064be5c876"
+    },
+    {
+      "path": "fixtures/compiler/quirks/brace_between_ctb.txt",
+      "size": 82,
+      "sha256": "76a7a5bd1731822804560966a12c40cfd6929b2b891ba3c47ef2d2c4a2c24b6a",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "2ee7ac88499ec187d4dd817402c43d97216ce8ca120b8998032f2218f1572645"
+    },
+    {
+      "path": "fixtures/compiler/quirks/brace_glued_close.txt",
+      "size": 54,
+      "sha256": "6bedb3e7a051c7e434acb812a2218d7ce77ce9a9b980f72962931091dfa81781",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/quirks/brace_glued_open.txt",
+      "size": 53,
+      "sha256": "5b0ab63f4127a5757c61d8280a03c0fc40539901d9ba13f9345e696dcb9b0e0e",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "1eb5c38eebd1c85092daa922fe5445c6a533f28f72418d5cda301199aafc7e3f"
+    },
+    {
+      "path": "fixtures/compiler/quirks/brace_tokens.txt",
+      "size": 58,
+      "sha256": "cf40feff2deda03f2f8b22ebd863a9e9a4b34b2c7de85cab71c9a79ef8891e9b",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/quirks/case_declare_lower.txt",
+      "size": 52,
+      "sha256": "a62ae31e4151ae878b74d07f13eca2a7755e74ccc8ce66f4784c55f4752a1aa0",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "1eb5c38eebd1c85092daa922fe5445c6a533f28f72418d5cda301199aafc7e3f"
+    },
+    {
+      "path": "fixtures/compiler/quirks/case_enable_lower.txt",
+      "size": 130,
+      "sha256": "eb503fc3101e4fa7b862528c75725a8e2eed5b3364b6e67a486e8819d9a85a5a",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "6a95461efba8e012028bad26397e181f718fba82328a4172c5e3e57c7befd6ac"
+    },
+    {
+      "path": "fixtures/compiler/quirks/case_keyword_upper.txt",
+      "size": 62,
+      "sha256": "a6fa1e7b9fff40f4db8d383ad477395e543b50665cf6a0944938683fe4ef8cc2",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/quirks/case_symbol_upper_body.txt",
+      "size": 78,
+      "sha256": "cd801bbaa7c7d75bde06fdd98b3cadfce667d22a71a2155b8a208013e1cb0b20",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "98636380cfd5d3cb13c65b0207347e2e1c1c2a28953f4f31d637119b04cef6a8"
+    },
+    {
+      "path": "fixtures/compiler/quirks/cmt_block_multiline.txt",
+      "size": 83,
+      "sha256": "9a1f742f69706f98f51cc05f96ad9385b6ad49716bc17b2df4e15ae52ae668a6",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+    },
+    {
+      "path": "fixtures/compiler/quirks/cmt_block_single_line.txt",
+      "size": 67,
+      "sha256": "cc5eb86e28d34b1c0de1146db8c6078251643f045499ddd68a31df3bcbc9d658",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "66747bc85d0f0ee1294ecd92c6b9f3bf185a0b96760bd1db2e144c2e8f9185cf"
+    },
+    {
+      "path": "fixtures/compiler/quirks/cop_numeric.txt",
+      "size": 81,
+      "sha256": "eacd419bf2156025b0ecddc9b19d6ddd63fefd88f28dae4c1ed1a69904e7501e",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "9f9dd8f37433cbf0b4d45085b46e835b5ed4e64d00ce88474977fda941564a3b"
+    },
+    {
+      "path": "fixtures/compiler/quirks/cop_plan_name_keyword.txt",
+      "size": 69,
+      "sha256": "16d786c8eb13ac447bbbb0f68431ae6508841cf398aade1fffee3799120b3be3",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "611cc72c9cd7e0226bd35d76c1e5ee54e0d974e237fbbd7f86b6a46c51fc6e4c"
+    },
+    {
+      "path": "fixtures/compiler/quirks/cop_sibling.txt",
+      "size": 84,
+      "sha256": "a045d9a8da4759484214158b14acf56cf5b387d713dda449f167a33f260d5c0f",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "d94939e6e078d60df34d55a527cfb8138c1f8180e4a43726ebbbd4c5e4b8a7d9"
+    },
+    {
+      "path": "fixtures/compiler/quirks/count_float.txt",
+      "size": 54,
+      "sha256": "e3b42e1bcf1d5cb8238d95ce974f521df0b3a2f1633754aaa1f9dba3643b3f70",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "dadac0f9d53a4dd5bf7737741a7357078494d9d532bd0a8f51cc5f1faedb7945"
+    },
+    {
+      "path": "fixtures/compiler/quirks/count_is_children_not_tokens.txt",
+      "size": 93,
+      "sha256": "3c4be321aca91ec9dc9a18c4a4ec632edb693d7aeffa2bcc5fecf5e394ff8f32",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "71bd21026c9773264d96c5e3df4e70c404bf9e91518cccae5eabf66667fc8286"
+    },
+    {
+      "path": "fixtures/compiler/quirks/count_missing_action.txt",
+      "size": 76,
+      "sha256": "25efa842150874b0ddfbd3db89c5357b8318906701e9cb64d4709fbbc3c19afc",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "c49d1adfa1505654231e945a82701ea647c55d9b6bf644160e5eab6932158e74"
+    },
+    {
+      "path": "fixtures/compiler/quirks/count_negative.txt",
+      "size": 53,
+      "sha256": "3c3d6e9b74ced49ec016ba490257501bc443fecb155cc1f1858bf980f7ec834b",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "1b891f5345e09b98c797b7df5dc495171710afb8c3d9d7f6e0f05820f4d16386"
+    },
+    {
+      "path": "fixtures/compiler/quirks/count_too_large.txt",
+      "size": 78,
+      "sha256": "bf867d8a46831ce2425c8605e9d169397562b8f40ab7faf045a9b54199f457e1",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "b67146f155e6714d69b70e631ddae44eeeef4e65c9781f1e9b388366c12d6727"
+    },
+    {
+      "path": "fixtures/compiler/quirks/count_too_small.txt",
+      "size": 82,
+      "sha256": "f3c6672bfcab2ae983b898d871d6ef60e5d6856f5b8fa7113a8625fa93a55afc",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "23abf211e4670c2d20424a9e1f0ab666c5871a2abb18d3c9d01eea24fe0ce333"
+    },
+    {
+      "path": "fixtures/compiler/quirks/local_reals_61.txt",
+      "size": 450,
+      "sha256": "fd42dfe628309d2f3b56ee46024e1772a0c97c735dca5c16ce8fb076193f5936",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "ab429c36402052e6e60e61fad0b2d21cc7094174ca0102ef813c93d712b1b166"
+    },
+    {
+      "path": "fixtures/compiler/quirks/lowercase_keyword.txt",
+      "size": 57,
+      "sha256": "73b8ab0b35655684b7813e943c1501c0e1894f23121e2706cbd56c0d68f49afa",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "c5af49226fc124200178ee99f6002be9d968c7860f35b12123429473518469ac"
+    },
+    {
+      "path": "fixtures/compiler/quirks/msg_interactor_numeric.txt",
+      "size": 80,
+      "sha256": "d59343721e3cb7482cdb1d1ec5f2eb9b3cca1e703059c08cd3f3711d1ed6b70f",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "b3336604643a09f4c5b48fa9bbd17e40ab45f52e3285139e79f1b1758b961c55"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_big.txt",
+      "size": 89,
+      "sha256": "7ec86181b4a6904f0e0d7a4d7e2d1cae5ce75b9428fe9b1357936bf6fc85f755",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "a2d2caaa3737129e3c36e4c1a2cbc7015119ba569f3e4e235ff21a70f8855158"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_exponent.txt",
+      "size": 82,
+      "sha256": "be8f29fc8fdb56553011cbe18acd06efd413ad56c823e1580b1baf247b300949",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "5d163e4154df3d37a0e4ef44d4a2e1d50321103105e7d6776122a6ca8b2df37c"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_exponent_d.txt",
+      "size": 107,
+      "sha256": "ea484e525d6c0547b62d5e303b3dcc3b4f52c5883bfefcbd7128a3958246ebcb",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "6d11bd4578cbf12fbfb7c9167ee16a663eeb17d637bd94cb8fa584fe7b6bdf3d"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_exponent_dot.txt",
+      "size": 84,
+      "sha256": "7169bd78369b9913766ab47c6cd64d605e4333ccffb678c457b92178bd129d02",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "0f2b80571ef8024efad5fd49956454356b3f08de2a36e6b3003d2466097e109e"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_float.txt",
+      "size": 82,
+      "sha256": "dcfb98d5bd157bb833a76faadc430267767a7d1cf87d599ce5c42a8edecaf49f",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "32e782fc1c995604a2113b6b9199e85db23a8d14df036194fa6aec333f70cd3c"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_float_leading_dot.txt",
+      "size": 82,
+      "sha256": "1ba626e4ca2a66f94b4c45ea003af2280c9caca530bb13d86efd731a69865871",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "d786574cbec5171da9d1bd26d589707628324c016ba0bb3faa2da0a73640b1e2"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_float_neg.txt",
+      "size": 83,
+      "sha256": "4d192132c93fedc091a5477bba5a5b3e721f05c9a2a5bf8364d55197c35bdd28",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "76039563efb49e5ff0fb945fffb27d178f224b609e0bf1ef713b59b8159d0822"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_float_one_point_zero.txt",
+      "size": 82,
+      "sha256": "650e78d7c8d0759eda9aff08dd684ec182c37993f3d018869a95842d18c9d2ae",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "96c2733668c01425916113f92ae81bb81882bcd3f956dc6e679a2b760e0c05f9"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_float_trailing_dot.txt",
+      "size": 81,
+      "sha256": "93d936960f01f404e21d3b8f39c89dcd684bd83998defdbb4b179f948f0eb8d2",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "71aa13b99586c2087b26bd448ea35e94b4e0ad30fac439ead1999deec42eb571"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_hex_floatbits.txt",
+      "size": 89,
+      "sha256": "fab8292707d3a91440e708ba4650699cd186121e043082b94544c5593f59d9f9",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "96c2733668c01425916113f92ae81bb81882bcd3f956dc6e679a2b760e0c05f9"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_hex_lower.txt",
+      "size": 83,
+      "sha256": "de55186158c4714d367e2edd9c3c267650cd9728984d0f7140cb5dd4ef88484d",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "f83e57f3c5d3b3cfef01f2057d3ec43e20b610e42ce478d70b249874bcc163ac"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_hex_upper.txt",
+      "size": 83,
+      "sha256": "e342fbe3f42e32bbeafaf6ae43e461b484d13cb4e6a90ed418bbae431fc81796",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "f3fb1b767b0daf4c63de83efaf95077dec09ae180c0831f671173dd275b0e241"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_hexdigit_garbage.txt",
+      "size": 83,
+      "sha256": "738cd5363bc7abe63da7e2ba46424a17109a49bb97b11ac0854cc8b7d532df49",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "793ea6329ad8b115367225b6f1922d952dcf40c9dc217a39648382c5613ce035"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_int.txt",
+      "size": 81,
+      "sha256": "7072a19c5eb235352bac57e0c343cabf576eec3d44302bfea94e19be7bd4811a",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "793ea6329ad8b115367225b6f1922d952dcf40c9dc217a39648382c5613ce035"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_neg.txt",
+      "size": 82,
+      "sha256": "56200e9c808d7af237f2184c3cfcf4944287a95d6ca11a25eb708208128812d1",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "da918e59b4ee379a9d63a0222f806448cc80abe03c10240ab37b46ada249e17b"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_plus.txt",
+      "size": 82,
+      "sha256": "25663e5a68e224e0a35beaf25346a82b87614291e75e68bf4b5f60172f5143d5",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "793ea6329ad8b115367225b6f1922d952dcf40c9dc217a39648382c5613ce035"
+    },
+    {
+      "path": "fixtures/compiler/quirks/num_underscore.txt",
+      "size": 84,
+      "sha256": "2f75d9b8d95b2aa1067954fc288fa59007efa941f999b66fa159419c34a92e89",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "5d163e4154df3d37a0e4ef44d4a2e1d50321103105e7d6776122a6ca8b2df37c"
+    },
+    {
+      "path": "fixtures/compiler/quirks/str_basic.txt",
+      "size": 86,
+      "sha256": "77fe86892799f66e7212d62371f0668495c23a65c3ddac6cb0ceb942468f155a",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "bde905c55190d1d68a1ffe48ddfa73474bb68df02e21d3baddc8a61c87505e93"
+    },
+    {
+      "path": "fixtures/compiler/quirks/str_behname_with_space.txt",
+      "size": 94,
+      "sha256": "71b1957b04d4e55661e1809ca5760637fe3893763054d44148677cddb2f473dc",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "30e941ae4ff5dfc93ed964eecf79a9b8f4ad2b6272b2e0dfe10d9f23b29ab070"
+    },
+    {
+      "path": "fixtures/compiler/quirks/str_curly_quotes.txt",
+      "size": 84,
+      "sha256": "97284078e83310b8afe5badd00ef7fe745304f61d8ade1949706db172ad13333",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "484744a7fee825c91b2fd1f9a34344733fcbcad7b9f86efd81e3a6cfea30e2ae"
+    },
+    {
+      "path": "fixtures/compiler/quirks/str_empty.txt",
+      "size": 81,
+      "sha256": "c5ab7f6e4ee586e30b06c48bf54ad9b76b8de7793333f7783b8cd64fd6fac436",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "1111b2eea51c536b4abade7c0f2f183ab9d9913c8494582b3a05fc8b809a86cc"
+    },
+    {
+      "path": "fixtures/compiler/quirks/str_escape.txt",
+      "size": 85,
+      "sha256": "21bab1cd7e202e9ab26b101183f0f14798b32e245b30bbd33555fa58c5de740c",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "4fd0114a293cb5da56cb451ddbfd11ecc0e96e72ba37ccccef71be5c97219085"
+    },
+    {
+      "path": "fixtures/compiler/quirks/str_stale_bytes.txt",
+      "size": 96,
+      "sha256": "98888fd1b0030246cdf5277be4a5a37dca9feb7c512093b2fd10dd6a3dc878e8",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "9377ddb8f709cd658cf00bc22cbd702a777aed0bca6034aa2c51e0265c346cb9"
+    },
+    {
+      "path": "fixtures/compiler/quirks/str_underscore_space.txt",
+      "size": 90,
+      "sha256": "294c85b4b2a2b320072edd46cf989f8cb9fa03c5cb1ca12554a5f9b5301c65ba",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "86c89ab203bea2b55facf0deb0dac20baad0167048e6b0e7a220c83d247b5148"
+    },
+    {
+      "path": "fixtures/compiler/quirks/sym_RET_ignored.txt",
+      "size": 86,
+      "sha256": "6b8d405ebf8dff85c2ddb84b1ab8118e2d369165b0ba95b20fb55ef5aaea62ca",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "484744a7fee825c91b2fd1f9a34344733fcbcad7b9f86efd81e3a6cfea30e2ae"
+    },
+    {
+      "path": "fixtures/compiler/quirks/sym_anim.txt",
+      "size": 93,
+      "sha256": "4d96a44c19f305c9d673602fb50c34483aab3906f25a9069892fe4acf38ced67",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "12ad86006b40edb982e2ebd7b4fdd824ad52d1f49aeb892c90e48c64adbfbc09"
+    },
+    {
+      "path": "fixtures/compiler/quirks/sym_direction_A_.txt",
+      "size": 88,
+      "sha256": "767d269928b197125c055f3b4910ab9adb516e3d532daad11f489ee3b7edfeae",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "5d163e4154df3d37a0e4ef44d4a2e1d50321103105e7d6776122a6ca8b2df37c"
+    },
+    {
+      "path": "fixtures/compiler/quirks/sym_duplicate_first_wins.txt",
+      "size": 91,
+      "sha256": "53acb758a53cc27eae87d0d5733c61aac261b0cd6450aff138cef5e7f403f31d",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8494562b5327161701ae2fe674ce1f8ab22663a76346a833735945f6f2434864"
+    },
+    {
+      "path": "fixtures/compiler/quirks/sym_enumerators_as_values.txt",
+      "size": 87,
+      "sha256": "8d827e05920e44d0b781a7094bed4e5c5c2ab24d16c7881d699181559f05d0e7",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "d3ef740db02a5cf93ee0b800402087bbc2ae75885e6f3c0f69afad5b17d76e3b"
+    },
+    {
+      "path": "fixtures/compiler/quirks/sym_infotext.txt",
+      "size": 95,
+      "sha256": "8e5ca05334b25871cf27b7d7bb10169e44d2430d83e3a909d329ab1fa9bd079d",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "03e9690aa4fc6e32cf96301142e0934414a523e3f98d3b32c907f5405136ed0d"
+    },
+    {
+      "path": "fixtures/compiler/quirks/sym_pronoun.txt",
+      "size": 98,
+      "sha256": "6ece5d6d2eadd9d8eeb8a79ed2e62e4788170ec380bb3b1ce3201fffa61ec479",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "594ab05c56aaee832faf8d8a77ab6cb69fe676ef2c0b772a7a331f51c401ea3e"
+    },
+    {
+      "path": "fixtures/compiler/quirks/sym_sound.txt",
+      "size": 97,
+      "sha256": "d02dd42a37d4d8a793895d03aa80054a9ea6cecb4a462af1497ad544a83d8c6c",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "d0c7814da13d246335f6b6768d390d3151f8ab30dafcdbb1f3348b4731dbcdf7"
+    },
+    {
+      "path": "fixtures/compiler/quirks/sym_specials.txt",
+      "size": 166,
+      "sha256": "809ef4aec9c0f815f27e519ad63b7ba9616507d119b24ce4a619c4a6163e6ae5",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "b6373496e7847da4c1ece8e1b85494539822c057b54aa06dce2cefaa83dbc93c"
+    },
+    {
+      "path": "fixtures/compiler/quirks/sym_wrong_namespace.txt",
+      "size": 81,
+      "sha256": "396d62b90d20b1b0d4fbcaf57d77947d1138e42bd89140b36426163a9a125b7c",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "80cd0872d41cc8347f2c218ebb26055cbd7aa12c9708f347147aed20bfd0f956"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_prescan_34.txt",
+      "size": 83,
+      "sha256": "ca8661ea3a814930750e182b3cd02fd08e5c35debf97342d31c5e25d42b6aaf7",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "282af9ec10f2b7d4fa95cdb878c66040493c359ebc041f4e7a39fce8735a490d"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_prescan_35.txt",
+      "size": 84,
+      "sha256": "ec0b456b4a9e491a564f6941a310b9c32cf307eb81124af43b8f87ecd28aa293",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "505516a230cdf8c75626859281cf426ee302e39c50130e0dcb15dcf9ba41be9d"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_prescan_36.txt",
+      "size": 85,
+      "sha256": "9d7ae3d345ce3b75b5e4caba1e3da76af677c922c7f0053d1456a29d6ccdbb3d",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "a3c3765be7897b639775a5e390b4453008cd8f356d733a67379644102d5a81e9"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_prescan_37.txt",
+      "size": 86,
+      "sha256": "91a5186f0b1c6b9a677d5ca4ce3852cc9f6300da0fd4b1777c443c77af4e7bb0",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "691811204a7d1900296e6f08affc03bc076dd617a439b4615232747c100e3d7e"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_prescan_38.txt",
+      "size": 87,
+      "sha256": "ef3c2c01c070d8f97a61e32c0c0ee7c819af56374f137eb19f9446ff8abb4485",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "559b08cda1720f5ca3859ee02c30b5e272dfc3076f43b2f147b0b2784edd42d1"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_prescan_39.txt",
+      "size": 88,
+      "sha256": "1a09ac903fe97d4efd90eea7c6af34f6245aa4573717ed71cf320850d3118977",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "fd6872a82761091f84aef5501898685f1d8943b3acbac120725f48f220d24b37"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_str_30.txt",
+      "size": 109,
+      "sha256": "97d31f54a4682f57a84147b481f504d632993a8009a160f9fb7e56a719fce9b5",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "684ce9a33f5e91ae35705807cd04c3911c9da85a6610f6a30cb2996cc4750240"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_str_31.txt",
+      "size": 110,
+      "sha256": "fc2cbdd7f155ce9774646503c1f1051a8624216f1bd51c878fd31276587a489e",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "4e64b6a98220ba08547419a83309e43061c394768205e8f9c680c1483af6aa8d"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_str_32.txt",
+      "size": 111,
+      "sha256": "f1f08fb8577a82fd1d3d75249f1bb84d2ea730bed5f7532930bc143e5ef05c8d",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "58c0a72d4d119a42310009466572fd551cd321153503d02a4effa6276e8a8f35"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_str_33.txt",
+      "size": 112,
+      "sha256": "b756d5232e6084ab612cd5bc5080871fafdd557850603eaa8352906006ea4905",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "bbb86d45861c8245f5ca3cbe843775b8f7a3b6816d89aa2079e86144f6f3d023"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_str_34.txt",
+      "size": 113,
+      "sha256": "77c216dd0a55551cae8e509e3ba2edf16cb62fad982b0440ee2221a18f16470c",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "c02c8d76efab6b35da320177744c64d4f669f7195de4d7d0092123309f8cb16e"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_str_35.txt",
+      "size": 114,
+      "sha256": "12ca24972bf26362c2d9f84d150db50fee7a362790af3c50083308e42cf3c3a3",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "0cf8dfd7fbc2bb397ea741b85e440a0eb99943ab2212f6150bf75d479f5ed81b"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_str_36.txt",
+      "size": 115,
+      "sha256": "ac27ff3072d6100dd25cd86e109502bee12da8176099d4f80e0832f979675e16",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "ff207a6654eb28c4d5a45d1cd04ba2e3b60761a60f1c5f31708af556487307f1"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_str_37.txt",
+      "size": 116,
+      "sha256": "9c047e53fc9f707b025417b2412010decfacd8b0af9afa856badc758ccfd3a62",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "a70c90b8e606b50346f84aa01e0ea16d810bbfb88a674d5ae1f7c306b267ab5c"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_str_38.txt",
+      "size": 117,
+      "sha256": "94f922c672e6b4dc83a61713d0a16e9041719eea2ec130081343e6bd69d6ab01",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "feca16f0d9b7cd7516e9296fedbc58036aa85c942813b3a90690b2fea73067dd"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_str_39.txt",
+      "size": 118,
+      "sha256": "9c55f7ccfc98d3c61cfe81fd3db3d038c9f62f292d407e3bd582165b5df8f593",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "b214e0ff8be15bca78b62d3e8d2a0a0bc423c7efd760ec9df6d656c11fc455af"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_30.txt",
+      "size": 109,
+      "sha256": "d4c92bba7be06023fc01f602a47e1d8027ff89967d1e9c0b5a1927ce6e8d3f95",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_31.txt",
+      "size": 110,
+      "sha256": "29031459a62552a4cb9797572282765dfbd4052c42668a2b08b24cb3587c58ea",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_32.txt",
+      "size": 111,
+      "sha256": "2b9d04aa3c95d943e4c7455065446d100f843454c805cfea21ac2ad8fbc99953",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_33.txt",
+      "size": 112,
+      "sha256": "ff7784660f82912681b91a51f1cfc8510285ae87064969b3715069c3454ff754",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_34.txt",
+      "size": 113,
+      "sha256": "2026131ef3d131ee315b7a5c0b7b5ead952b3c14b48379f07e5adbba957e492c",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_35.txt",
+      "size": 114,
+      "sha256": "d6f283d0b75ebcb983e082435459bd742e6fdc0abe259786db33ec4062d394e6",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_36.txt",
+      "size": 115,
+      "sha256": "0f70d3078cdf00ea3a827eab153a3156fe1047366e77acbe09eea7937dd18037",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_37.txt",
+      "size": 116,
+      "sha256": "7e27d7f80760d233d5ba8f9134fab77e5652ebc405e1835e2f4a3168ce7b1707",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_38.txt",
+      "size": 117,
+      "sha256": "eed38903b3b14a538d15cb8fe02ee0b379a8d3d6e53a38e1225cc916cf2f289a",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_39.txt",
+      "size": 118,
+      "sha256": "cc033667f8ccd3585eeed47c845d2583d42cf1745e3eeb36b57cf255c855617e",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_40.txt",
+      "size": 119,
+      "sha256": "8b2e642655d86618d5e82d23d597ebaa5ffee5a0f79e39f7e23c143faa0e8bab",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_41.txt",
+      "size": 120,
+      "sha256": "2d365deac3666a0cbecfa999d732ebeb3f12f52fa01fab7ed91d0c12965864bc",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_42.txt",
+      "size": 121,
+      "sha256": "5d6e130da3c5c7827926c5140b400ba7ac7a4e71340463c547288a5f28fcc86e",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/tok_len_word_43.txt",
+      "size": 122,
+      "sha256": "5032f79cab0ff27ca876b6503be4a830930c27c76c153b8ef260aeba884199e5",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8f09bf2e2683ec02c3ba22b9adbd3e233b8797496ea90cca44e0bfe651a62b43"
+    },
+    {
+      "path": "fixtures/compiler/quirks/unknown_keyword.txt",
+      "size": 58,
+      "sha256": "4dcc1342d79ca502d329fb0d0cdb09d1b76ffd44068f223da4f38cd4d96b9bdc",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "c5af49226fc124200178ee99f6002be9d968c7860f35b12123429473518469ac"
+    },
+    {
+      "path": "fixtures/compiler/quirks/unused_datablock_block.txt",
+      "size": 166,
+      "sha256": "0f7024ddd5efbbeddf1a3da39fbd2de79fd7ef6eace85c0f6ddee8b64379f478",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "5ba0a8b540600b6fde4d02f1c24dbe247c95d216acf51e2e2fc8f194a1b00697"
+    },
+    {
+      "path": "fixtures/compiler/quirks/unused_do_local_action.txt",
+      "size": 84,
+      "sha256": "d304ebbc8c320df78265c797ca1d880cd21af1f93e9bfee0dd6e182a9b155b6b",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "d832256a56169d8a9c47c35ec6e1b704f99c8b8b3feb5f5c741c6ee280dd47b7"
+    },
+    {
+      "path": "fixtures/compiler/quirks/unused_do_net_action.txt",
+      "size": 82,
+      "sha256": "99f2bcc662d69495fab29218d038bdb1e71b8e8fa19acb90c4eecfb997dc8101",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "88061ba776ca41958327488dacd4a55ec2bd556173f41e00f5af45107ca81ec7"
+    },
+    {
+      "path": "fixtures/compiler/quirks/unused_local_reals.txt",
+      "size": 133,
+      "sha256": "f513af76a319a00cbec8073ca7bfc73baf9036ae0399534b5bd860e488926d2d",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "8abf963b4bd56d5eb0229d73a2be34e8d8476f2e422aaa8144053a403ecb56f0"
+    },
+    {
+      "path": "fixtures/compiler/quirks/unused_net_coll_interactor.txt",
+      "size": 134,
+      "sha256": "5b42161db9e66f62de988a8f4438c824b856db43850d180f2c42d395817552fc",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "c3d158e97fb12ad91ab8eaa42435662af7eaeb7004d51819b0e2b40516803d5b"
+    },
+    {
+      "path": "fixtures/compiler/quirks/wrong_child_count_too_large.txt",
+      "size": 57,
+      "sha256": "0c9ff7dfb5ada3d5dd27954035dc6f9596a2670c5b157e75cfcacb33f1b9c81e",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "51ba536f9c16d9f634bc9c3260b35cce3ba8ac37084ccd44ea026bff1717688c"
+    },
+    {
+      "path": "fixtures/compiler/quirks/wrong_child_count_too_small.txt",
+      "size": 57,
+      "sha256": "123e23a4058bec3e2a170af6b59e6c39d089b6f9db080635643c9ccd66ceff6f",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "fbed02fa6804a0f8490de6a249ead79e9376d0352721f0907700ca849d0b822e"
+    },
+    {
+      "path": "fixtures/compiler/quirks/wrong_enum_namespace.txt",
+      "size": 55,
+      "sha256": "e278f634ee316a24d9dc2067c1692b66df0b477195fd18007f24c612dbe1f1ab",
+      "category": "quirks",
+      "outcome": "accepted",
+      "diagnostic": null,
+      "pbn_sha256": "052bead8b1178dcddae7c7701e00fcfcf7b5300976df70612fb53ab3ddaa2815"
+    },
+    {
+      "path": "fixtures/compiler/errors/article_ascii_plus_end.txt",
+      "size": 599,
+      "sha256": "359f8d2f1d32a184c0ad7c7fa589e0c3715e8e5c3e9de961ecb7ceacd4beb767",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "article_ascii_plus_end.txt:1: error [compile/throw] (byte 24): Expected an argument enumerator.\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/article_ascii_quotes.txt",
+      "size": 589,
+      "sha256": "1826eade56a1a22a95f7c5a35d3ff316c68785b275de1755872e5fc390dd88ca",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "article_ascii_quotes.txt:1: error [compile/throw] (byte 24): Expected an argument enumerator.\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/article_verbatim_cp1252.txt",
+      "size": 589,
+      "sha256": "336baf019af21a485d8dfdce045e16e25d428b6b747d34e3d19303e79cc9148f",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "article_verbatim_cp1252.txt:1: error [compile/throw] (byte 24): Expected an argument enumerator.\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/bad_plan_id.txt",
+      "size": 93,
+      "sha256": "e76ff7a3563cf4d6c1735e3f79a9fcdd0050069984f31971e505d80f81b6fef3",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "bad_plan_id.txt:3: error [compile/throw] (byte 89): Bad plan id value: id_BEH_Bogus",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/base_cr_only.txt",
+      "size": 50,
+      "sha256": "8cd5550b5fac3fb83750b4591563a5e7e6304b03e34bb429fa72c52282793af7",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "base_cr_only.txt: error [write/no-end]: no END_PLAN (0xFFFF0000) in output; the original WritePbn would overrun its buffer",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/base_missing_end_plan.txt",
+      "size": 42,
+      "sha256": "6cacb497a3ceeba681b95bccaaad5e228b0886066bc7e3abd219720727628574",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "base_missing_end_plan.txt: error [write/no-end]: no END_PLAN (0xFFFF0000) in output; the original WritePbn would overrun its buffer",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/beh_decl_no_name.txt",
+      "size": 50,
+      "sha256": "d16c8eaaa19688ab962c8b09951012dfdb548c17b633ee1c8fcfdb37177e0aa9",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "beh_decl_no_name.txt:2: error [compile/throw] (byte 40): Expected a string name in Behavior Declaration.\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/beh_decl_numeric_id.txt",
+      "size": 36,
+      "sha256": "50c2b7daef3bc7ca8d35fc11a02a93131d4402091a182375121b344aa838cead",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "beh_decl_numeric_id.txt:1: error [compile/throw] (byte 21): Expected an id_BEH_ type id.\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/beh_ref_unknown.txt",
+      "size": 81,
+      "sha256": "7b00436bf9a5dd72c45937db1dd5ad13689b60a265b10551cdac73f792f54f7c",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "beh_ref_unknown.txt:3: error [compile/throw] (byte 71): Could not find behavior named: Nope",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/case_behname.txt",
+      "size": 78,
+      "sha256": "11ce8518113ade72825906a57a7a62a71ef6cfd55aa7350cc2c59f40b4dbe8fc",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "case_behname.txt:3: error [compile/throw] (byte 68): Could not find behavior named: s",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/case_special_lower.txt",
+      "size": 90,
+      "sha256": "fa5395647973bc5435d61454f19b75a97c874077e84814cc7ed76398d895bb3a",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "case_special_lower.txt:3: error [compile/throw] (byte 80): Bad plan id value: _no_beh_change_",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/case_symbol_upper.txt",
+      "size": 52,
+      "sha256": "d815c9a6b6878a338344ceebaa274aa3736a718f7379831bc43bed0ad1fef7c2",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "case_symbol_upper.txt:1: error [compile/throw] (byte 37): Expected an id_BEH_ type id.\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/cmt_paren_call_syntax.txt",
+      "size": 55,
+      "sha256": "7ce10fc7db57eb07a0dc80edc5b0908f0f52f6faa6172ea64537005cdeb3ca11",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "cmt_paren_call_syntax.txt:3: error [compile/throw] (byte 55): Expected an argument enumerator.\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/cop_missing_source.txt",
+      "size": 85,
+      "sha256": "22db8c8930ea02ac5e4a1186f58bd408ca361892dda5e7f3aaa68e88e8217120",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "cop_missing_source.txt:3: error [compile/throw] (byte 75): Plan file could not be opened.",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/cop_unknown_beh.txt",
+      "size": 84,
+      "sha256": "6d058a0b93233873f51388377f12867b93640eb4bc5abec057bf8351adb0c00f",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "cop_unknown_beh.txt:3: error [compile/throw] (byte 74): Could not find behavior named: Zzz",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/count_enumerator_51.txt",
+      "size": 55,
+      "sha256": "efd4c920c780cf5822f2a9006226970e39865cf29f3a8b46256401cfe72c2c46",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "count_enumerator_51.txt:1: error [compile/throw] (byte 22): Bad plan id value: _51_",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/count_missing_decl.txt",
+      "size": 50,
+      "sha256": "a19d956f0dbe50357cd5eb49bea49c684d3bd848e4a3028da535f2b3158409d4",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "count_missing_decl.txt:2: error [compile/throw] (byte 40): Expected an id_BEH_ type id.\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/limit_long_symbol.txt",
+      "size": 142,
+      "sha256": "c153df1e9126bc04e6dc27cf27bf244f7ae28d09b3548436109ed10fb8550ff5",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "limit_long_symbol.txt:4: error [compile/crash] (byte 142): a token of 44 or more bytes overwrites the prescan's return address; the original compiler would crash",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/limit_too_large.txt",
+      "size": 80056,
+      "sha256": "8cfb58eef2d0acefa2d060db4e57d3c63d8ffc23d146073f0c637c88eb424920",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "limit_too_large.txt:3: error [read/throw] (byte 90): This plan file is too large.  Why not break it up into separate plans?\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/missing_end_plan.txt",
+      "size": 48,
+      "sha256": "0e84d0555dfa6f7009398f11d0d7322a8b436c7d4885dfc83c2a3ce48828edea",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "missing_end_plan.txt: error [write/no-end]: no END_PLAN (0xFFFF0000) in output; the original WritePbn would overrun its buffer",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/msg_bad_id_truncated.txt",
+      "size": 99,
+      "sha256": "5d855d0d48540c6b6dc008063f3c953e1a5a7a7266ccb6a82f74b1251699f0a7",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "msg_bad_id_truncated.txt:3: error [compile/throw] (byte 89): Bad plan id value: id_ACF_ThisNameIsLon",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/msg_bad_number_truncated.txt",
+      "size": 103,
+      "sha256": "0b18f9d25c18b135d5522fb4bafa1e1f6d922ea358f43d7570166fc3e2bdc60f",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "msg_bad_number_truncated.txt:3: error [compile/throw] (byte 93): Bad number in plan: 12345678901234567890",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/msg_interactor_no_count.txt",
+      "size": 92,
+      "sha256": "260e5c94b106f3dc39933207c0a806bd684f4561c4ea4e0d028d6bb8675af38d",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "msg_interactor_no_count.txt:4: error [compile/throw] (byte 92): Expected an id_MSG_ type id.\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/msg_interactor_string.txt",
+      "size": 82,
+      "sha256": "86939dcfd8cc872c7f1d4a4be69f036460f4edc65b6db07672f38ecea115cf8c",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "msg_interactor_string.txt:3: error [compile/throw] (byte 72): Expected an id_MSG_ type id.\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/num_bad_char.txt",
+      "size": 82,
+      "sha256": "e236ce0c81501e37ac8eeaa8ab6b40ed5f81dc610fd6fa83992a30fc62a16a5f",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "num_bad_char.txt:3: error [compile/throw] (byte 72): Bad number in plan: 12z",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/paren_count.txt",
+      "size": 58,
+      "sha256": "3847f7f84445913518a8621cb136bd87cbadae6d049555423429a4ac05f9f8e5",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "paren_count.txt:3: error [compile/throw] (byte 58): Expected an argument enumerator.\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/str_space_inside.txt",
+      "size": 90,
+      "sha256": "97e8b44974bf0f7dc5a80ff11db60cdee9a1aba9548387d2545cd40958af73e5",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "str_space_inside.txt:2: error [compile/throw] (byte 72): Inability to read string: \"Two",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/str_unterminated.txt",
+      "size": 83,
+      "sha256": "83cebfd6b3e6ec65f705f2e38dca33940e8c51902bc0732d77bd7aaa9869cafa",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "str_unterminated.txt:3: error [compile/throw] (byte 73): Inability to read string: \"abc",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/sym_idle_word.txt",
+      "size": 83,
+      "sha256": "249dd1c8d1732992665f1004c943724ac546b4ff81149da213e57fc423484bc3",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "sym_idle_word.txt:3: error [compile/throw] (byte 73): Bad plan id value: idle",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/sym_unknown.txt",
+      "size": 78,
+      "sha256": "b8bb4ee20bdf751c1e21b44acf0afeee0e10ffb0b2cf8dcc6f8227aa11f208bd",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "sym_unknown.txt:3: error [compile/throw] (byte 68): Bad plan id value: id_ACF_Bogus",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/tok_len_prescan_40.txt",
+      "size": 89,
+      "sha256": "a776630c208263fda745c470554b120f66ac3643e4d85caea061ad40dfb75f3c",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "tok_len_prescan_40.txt:2: error [compile/crash] (byte 79): string token of 40 bytes (40 or more, quotes included) overflows a 40-byte buffer; the original compiler would crash",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/tok_len_prescan_41.txt",
+      "size": 90,
+      "sha256": "9ac0fdae6a2f5c181d9e0e1e1be875f948eca3f94fc8c4be4afd513c355dd543",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "tok_len_prescan_41.txt:2: error [compile/crash] (byte 80): string token of 41 bytes (40 or more, quotes included) overflows a 40-byte buffer; the original compiler would crash",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/tok_len_prescan_42.txt",
+      "size": 91,
+      "sha256": "a7892e1a0e73dab195fdfa01fe3b87cb908ded55204b832ce417eb61311a85e4",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "tok_len_prescan_42.txt:2: error [compile/crash] (byte 81): string token of 42 bytes (40 or more, quotes included) overflows a 40-byte buffer; the original compiler would crash",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/tok_len_prescan_43.txt",
+      "size": 92,
+      "sha256": "0201491becde34dfaba4ae4615f12193d37ab639438cf8c64b83876e3eeab6cc",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "tok_len_prescan_43.txt:2: error [compile/crash] (byte 82): string token of 43 bytes (40 or more, quotes included) overflows a 40-byte buffer; the original compiler would crash",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/tok_len_str_40.txt",
+      "size": 119,
+      "sha256": "acd9e71df25daefeb2d594cd7076f7ca99bd97516c9908875c5bf070026a3acc",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "tok_len_str_40.txt:3: error [compile/crash] (byte 109): string token of 40 bytes (40 or more, quotes included) overflows a 40-byte buffer; the original compiler would crash",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/tok_len_str_41.txt",
+      "size": 120,
+      "sha256": "2cace1cab62a78f0d2d6d53e90017cbe41c74974a5a31bfbf32cdd5424fe8860",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "tok_len_str_41.txt:3: error [compile/crash] (byte 110): string token of 41 bytes (40 or more, quotes included) overflows a 40-byte buffer; the original compiler would crash",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/tok_len_str_42.txt",
+      "size": 121,
+      "sha256": "5c251513a99b9d7481b8279dde0e0c3b21f55c9be64b9e474039a577874d6e92",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "tok_len_str_42.txt:3: error [compile/crash] (byte 111): string token of 42 bytes (40 or more, quotes included) overflows a 40-byte buffer; the original compiler would crash",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/tok_len_str_43.txt",
+      "size": 122,
+      "sha256": "d771128ac07907358e3a704444ce225a83140c6b7f547c63358358ec224ada28",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "tok_len_str_43.txt:3: error [compile/crash] (byte 112): string token of 43 bytes (40 or more, quotes included) overflows a 40-byte buffer; the original compiler would crash",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/unknown_action.txt",
+      "size": 153,
+      "sha256": "5e974d54bc2bd87963562d0bdeb63ba758d9c6a908249526ecce0325608a9c21",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "unknown_action.txt:4: error [compile/throw] (byte 142): Bad plan id value: id_ACF_NoSuchAction",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/unknown_behavior_name.txt",
+      "size": 90,
+      "sha256": "4080026a1a03e20568593c1a5a70da59e21f872369276722ddd72f4bfd177c39",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "unknown_behavior_name.txt:3: error [compile/throw] (byte 81): Could not find behavior named: Nowhere",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/unterminated_string.txt",
+      "size": 56,
+      "sha256": "8fb5eecab7e05d172ae00bb0841bcb30684767f797b7bca78d046f9b8aab516b",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "unterminated_string.txt:2: error [compile/throw] (byte 47): Inability to read string: \"SitStill",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/unused_interactor_unknown.txt",
+      "size": 141,
+      "sha256": "3e0c57815015833b1ead4b37cd4bbba24eeb340c4e5c93f76e0edd76b0e0a654",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "unused_interactor_unknown.txt:3: error [compile/throw] (byte 128): Could not find interactor named: Nope",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/unused_local_reals_no_count.txt",
+      "size": 81,
+      "sha256": "122775ec2c9daa7e3f3ff17d2f3e964cf824982047525221491252bad9c62ee5",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "unused_local_reals_no_count.txt:2: error [compile/throw] (byte 29): Expected an argument enumerator.  First two args are id and string name.\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/unused_local_reals_not_string.txt",
+      "size": 81,
+      "sha256": "8d493865423ffd2170d32837f78a0672056107561a05733b75d6486924f7054e",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "unused_local_reals_not_string.txt:2: error [compile/throw] (byte 29): Expected a string name in LocalVar Declaration.\n",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/errors/unused_local_reals_symbol_count.txt",
+      "size": 91,
+      "sha256": "8fe621847c053104c101973074a723517254a6778ec1fbd2d199185f8d0b4eaa",
+      "category": "errors",
+      "outcome": "rejected",
+      "diagnostic": "unused_local_reals_symbol_count.txt:1: error [compile/throw] (byte 30): expected arg enumeration of localvars.",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/fuzz-regressions/fz_seed1_vertical_tab.txt",
+      "size": 89,
+      "sha256": "3e8136b8ec4e1b7c0b7543ea178e9b42b2d643fbb154a6a053c77b9f287e7be2",
+      "category": "fuzz-regressions",
+      "outcome": "rejected",
+      "diagnostic": "fz_seed1_vertical_tab.txt:3: error [compile/throw] (byte 79): Bad plan id value: id\u000b_PRN_Me",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/fuzz-regressions/fz_seed2_case01469.txt",
+      "size": 430,
+      "sha256": "1073b583016330776e5a59bfb16996c0d5949a7171a14aa595575cffef2068cd",
+      "category": "fuzz-regressions",
+      "outcome": "rejected",
+      "diagnostic": "fz_seed2_case01469.txt:9: error [compile/undefined] (byte 414): '0x': sscanf(\"%x\") reaches the end of the token and the original emits uninitialised stack bytes",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/fuzz-regressions/fz_seed2_case01828.txt",
+      "size": 745,
+      "sha256": "7f0afd279ec8dd66550296988cd49024a0d770ac465beab25a6b99d718eb1c50",
+      "category": "fuzz-regressions",
+      "outcome": "rejected",
+      "diagnostic": "fz_seed2_case01828.txt:13: error [compile/undefined] (byte 692): '0x': sscanf(\"%x\") reaches the end of the token and the original emits uninitialised stack bytes",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/fuzz-regressions/fz_seed2_case02199.txt",
+      "size": 1463,
+      "sha256": "9870be82564f2490630ec27ed207fb5a44b833120eb655ac407efb2d47c7caf7",
+      "category": "fuzz-regressions",
+      "outcome": "rejected",
+      "diagnostic": "fz_seed2_case02199.txt:8: error [compile/undefined] (byte 288): '0x': sscanf(\"%x\") reaches the end of the token and the original emits uninitialised stack bytes",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/fuzz-regressions/fz_seed4_case03004.txt",
+      "size": 199,
+      "sha256": "8bcc53c55359571e46dd4223fd795e696b74be0036e6967ca8530c5fe4dcdf78",
+      "category": "fuzz-regressions",
+      "outcome": "rejected",
+      "diagnostic": "fz_seed4_case03004.txt:4: error [compile/throw] (byte 185): Inability to read string: \"ab",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/fuzz-regressions/fz_seed5_case04106.txt",
+      "size": 95,
+      "sha256": "b600d4e2df0cf76504f4a26cb74c64c3691d7c4b6e865812b4e18f91146aac3b",
+      "category": "fuzz-regressions",
+      "outcome": "rejected",
+      "diagnostic": "fz_seed5_case04106.txt:2: error [compile/throw] (byte 81): Inability to read string: \"Go",
+      "pbn_sha256": null
+    },
+    {
+      "path": "fixtures/compiler/fuzz-regressions/fz_seed5_case04696.txt",
+      "size": 285,
+      "sha256": "01c0917982fd326b2c008fca9ea4e185556c72be1b86306d82f61eaa3bb82cf1",
+      "category": "fuzz-regressions",
+      "outcome": "rejected",
+      "diagnostic": "fz_seed5_case04696.txt:2: error [compile/throw] (byte 103): Inability to read string: \"ab",
+      "pbn_sha256": null
+    }
+  ]
+}

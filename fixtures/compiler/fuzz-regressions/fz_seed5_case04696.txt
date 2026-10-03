@@ -1,0 +1,6 @@
+DECLARE_BEHAVIOR 3 id_BEH_CardStopStor "S" "q_q_q_q_q_"
+   DO_ACTION 2 id_ACF_RaiseRaiseHumClapRe "ab "x"y"
+  DO_ACTION 2 id_ACF_FetchKeyHum " Named:Target:Label
+  DO_ACTION 2 id_ACF_BeepLowerDoo ""x "x"y"
+     DO_ACTION 2 id_ACF_CardRestRingSpin "a
+  END_PLAN // trailing comment

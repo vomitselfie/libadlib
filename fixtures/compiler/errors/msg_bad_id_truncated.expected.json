@@ -1,0 +1,21 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "msg_bad_id_truncated.txt:3: error [compile/throw] (byte 89): Bad plan id value: id_ACF_ThisNameIsLon",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "adlibc development (2026-10): \"Bad plan id value: \" carries only the first 20 characters of the identifier (local_38[20] = 0).",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "msg_bad_id_truncated.txt:3: error [compile/throw] (byte 89): Bad plan id value: id_ACF_ThisNameIsLon",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "msg_bad_id_truncated.txt:3: error [compile/throw] (byte 89): Bad plan id value: id_ACF_ThisNameIsLon",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

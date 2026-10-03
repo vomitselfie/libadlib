@@ -1,0 +1,52 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "d94939e6e078d60df34d55a527cfb8138c1f8180e4a43726ebbbd4c5e4b8a7d9",
+  "pbn_words": [
+    "00000014",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00160000",
+    "00000002",
+    "abcdeffe",
+    "0000004f",
+    "00000054",
+    "00000048",
+    "00000045",
+    "00000052",
+    "00000000",
+    "00000001",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  CHANGE_OF_PLAN(2)",
+    "    \"OTHER\"",
+    "    1",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "Behaviour name resolved by compiling Data\\Plans\\OTHER.txt.",
+  "found_by": "grammar probe [cop_sibling]: Behaviour name resolved by compiling Data\\Plans\\OTHER.txt.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "d94939e6e078d60df34d55a527cfb8138c1f8180e4a43726ebbbd4c5e4b8a7d9"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "d94939e6e078d60df34d55a527cfb8138c1f8180e4a43726ebbbd4c5e4b8a7d9"
+  },
+  "adlibc_agrees": true
+}

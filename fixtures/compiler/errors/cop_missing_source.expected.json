@@ -1,0 +1,20 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "cop_missing_source.txt:3: error [compile/throw] (byte 75): Plan file could not be opened.",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "adlibc (the original compiler crashes on this input)",
+  "found_by": "grammar probe [cop_missing_source]: Model predicts \"Plan file could not be opened.\" from the nested OpenPlanSource; oracle result recorded as-is.",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "fault",
+    "diagnostic": "cop_missing_source.txt:3: error [compile/fault] (byte 75): emulation fault Invalid memory read (UC_ERR_READ_UNMAPPED) at eip=0x44650d",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "cop_missing_source.txt:3: error [compile/throw] (byte 75): Plan file could not be opened.",
+    "pbn_sha256": null
+  }
+}

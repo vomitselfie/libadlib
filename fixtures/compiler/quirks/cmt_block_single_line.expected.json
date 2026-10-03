@@ -1,0 +1,28 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "66747bc85d0f0ee1294ecd92c6b9f3bf185a0b96760bd1db2e144c2e8f9185cf",
+  "pbn_words": [
+    "00000002",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "/* ... */ on one line: the whole rest of line is skipped, including tokens after */.",
+  "found_by": "grammar probe [cmt_block_single_line]: /* ... */ on one line: the whole rest of line is skipped, including tokens after */.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "66747bc85d0f0ee1294ecd92c6b9f3bf185a0b96760bd1db2e144c2e8f9185cf"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "66747bc85d0f0ee1294ecd92c6b9f3bf185a0b96760bd1db2e144c2e8f9185cf"
+  },
+  "adlibc_agrees": true
+}

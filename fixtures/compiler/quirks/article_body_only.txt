@@ -1,0 +1,3 @@
+DECLARE_BEHAVIOR 3 id_BEH_StandStill "S"
+SET_BEHAVIOR_PARAM Target: "TheGoal"
+END_PLAN

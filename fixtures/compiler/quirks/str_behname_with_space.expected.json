@@ -1,0 +1,52 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "30e941ae4ff5dfc93ed964eecf79a9b8f4ad2b6272b2e0dfe10d9f23b29ab070",
+  "pbn_words": [
+    "00000015",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000069",
+    "00000074",
+    "00000020",
+    "00000054",
+    "00000068",
+    "00000065",
+    "00000072",
+    "00000065",
+    "00000000",
+    "abcdefff",
+    "00070002",
+    "00000001",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"Sit There\"",
+    "  CHANGE_TO_BEHAVIOR(1)",
+    "    0 /*behavior \"Sit There\"*/",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "Names are looked up raw (with _), emitted with spaces.",
+  "found_by": "grammar probe [str_behname_with_space]: Names are looked up raw (with _), emitted with spaces.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "30e941ae4ff5dfc93ed964eecf79a9b8f4ad2b6272b2e0dfe10d9f23b29ab070"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "30e941ae4ff5dfc93ed964eecf79a9b8f4ad2b6272b2e0dfe10d9f23b29ab070"
+  },
+  "adlibc_agrees": true
+}

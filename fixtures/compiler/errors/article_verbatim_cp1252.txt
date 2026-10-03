@@ -1,0 +1,16 @@
+DECLARE_BEHAVIOR Named: “GoForTheGoal” BehaviorType: “GlideToTarget”
+SET_BEHAVIOR_PARAM Target: “TheGoal”
+SET_INTERACTION Message: “YerHit”
+            //Sent by the collision detection mechanism
+RESPONSE
+SetAnimation: “DoubleBackFlip”
+            //which has a trigger set at the 35th frame
+SET_INTERACTION Message: “YerDown”
+            //Sent by the trigger in the previously set animation
+RESPONSE
+SetFriction: “High”a
+SetUserControl: “Disabled”
+PlaySoundType: “Yelp”
+DecrementDamageBar: 20
+SendMessage: “TeamManager” “ImDown” “MyDamageLevel”
+ChangeToBehavior: “GetUp”

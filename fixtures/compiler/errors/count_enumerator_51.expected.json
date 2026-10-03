@@ -1,0 +1,21 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "count_enumerator_51.txt:1: error [compile/throw] (byte 22): Bad plan id value: _51_",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "grammar probe [count_enumerator_51]: _51_ is not in the table.",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "count_enumerator_51.txt:1: error [compile/throw] (byte 22): Bad plan id value: _51_",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "count_enumerator_51.txt:1: error [compile/throw] (byte 22): Bad plan id value: _51_",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

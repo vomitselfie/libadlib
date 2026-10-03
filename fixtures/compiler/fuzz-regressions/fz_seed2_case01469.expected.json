@@ -1,0 +1,25 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "fz_seed2_case01469.txt:9: error [compile/undefined] (byte 414): '0x': sscanf(\"%x\") reaches the end of the token and the original emits uninitialised stack bytes",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "adlibc (the original compiler emits uninitialised memory here)",
+  "found_by": "adlib_fuzz.py --seed 2 (case 01469): the oracle emitted 0x01000000 for a lone \"0x\" token where adlibc emitted 0",
+  "original_undefined": "a lone \"0x\" makes sscanf(\"%x\") return EOF and ParsePlanNumber emit its uninitialised local: NextToken's last separator flag (byte 3) over bytes left by an earlier call; the game's values differ from the oracle's, so --compat=adlib1996 rejects it (kind undefined)",
+  "at_discovery": {
+    "oracle_pbn_sha256_prefix": "43000000ffefcdab",
+    "adlibc_pbn_prefix": "43000000ffefcdab"
+  },
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "b552d7bbc0950964d1794a9c998fab8cc78b85811d2ed2e39e5e26afcc960401"
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "fz_seed2_case01469.txt:9: error [compile/undefined] (byte 414): '0x': sscanf(\"%x\") reaches the end of the token and the original emits uninitialised stack bytes",
+    "pbn_sha256": null
+  }
+}

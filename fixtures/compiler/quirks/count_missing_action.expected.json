@@ -1,0 +1,36 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "c49d1adfa1505654231e945a82701ea647c55d9b6bf644160e5eab6932158e74",
+  "pbn_words": [
+    "0000000c",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00180000",
+    "00000007",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": null,
+  "expected_from": "oracle",
+  "mechanism": "Missing count elsewhere: silently mis-compiles.",
+  "found_by": "grammar probe [count_missing_action]: Missing count elsewhere: silently mis-compiles.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "c49d1adfa1505654231e945a82701ea647c55d9b6bf644160e5eab6932158e74"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "c49d1adfa1505654231e945a82701ea647c55d9b6bf644160e5eab6932158e74"
+  },
+  "adlibc_agrees": true
+}

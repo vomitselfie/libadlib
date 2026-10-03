@@ -1,0 +1,4 @@
+/* first line
+DECLARE_BEHAVIOR 2 id_BEH_StandStill "S"
+second line */
+END_PLAN

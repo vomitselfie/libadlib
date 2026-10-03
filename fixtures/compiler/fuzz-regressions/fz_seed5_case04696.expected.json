@@ -1,0 +1,27 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "fz_seed5_case04696.txt:2: error [compile/throw] (byte 103): Inability to read string: \"ab",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "adlib_fuzz.py --seed 5 (case 4696)",
+  "at_discovery": {
+    "oracle": "accepted",
+    "oracle_pbn": "57000000ffefcdab000007000300000007000000feefcdab5300000000000000feefcdab7100000020000000710000002000000071000000200000007100000020000000710000002000000000000000ffefcdab000018000200000065000000feefcdab6100000062000000000000004300000046000000200000004500000078000000700000006c0000006f00000064000000650000005700000069000000740000006800000056000000650000006c0000006f000000630000006900000074000000790000000000000074000000540000006f000000540000007200000061000000630000006b0000000000000074000000790000000000000000000000feefcdab7800000000000000ffefcdab0000180002000000530000000000cbedffefcdab000018000200000030000000feefcdab00000000feefcdab7800000000000000ffefcdab0000180002000000140000000000cbedffefcdab0000ffff",
+    "adlibc": "FUZZ.txt:2: error [compile/throw] (byte 103): Inability to read string: \"ab",
+    "adlibc_pbn": null
+  },
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "fz_seed5_case04696.txt:2: error [compile/throw] (byte 103): Inability to read string: \"ab",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "fz_seed5_case04696.txt:2: error [compile/throw] (byte 103): Inability to read string: \"ab",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

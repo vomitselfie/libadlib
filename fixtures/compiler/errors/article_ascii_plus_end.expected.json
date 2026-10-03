@@ -1,0 +1,21 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "article_ascii_plus_end.txt:1: error [compile/throw] (byte 24): Expected an argument enumerator.\n",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "grammar probe [article_ascii_plus_end]: Listing 1 + END_PLAN: still fails in PrescanDecls at \"Named:\".",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "article_ascii_plus_end.txt:1: error [compile/throw] (byte 24): Expected an argument enumerator.\n",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "article_ascii_plus_end.txt:1: error [compile/throw] (byte 24): Expected an argument enumerator.",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

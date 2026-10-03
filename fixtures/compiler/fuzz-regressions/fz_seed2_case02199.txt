@@ -1,0 +1,32 @@
+GLOBAL_INTERACTORS 2
+     SET_MESSAGE_INTERACTOR 0x2 id_MSG_StoreJump
+       Enable 0x1
+    DECIDE_BY_AMONG 2 id_DCF_RestDashWaveCo
+       DECIDE_BY_AMONG 4 id_DCF_BeepCountCloseRe
+        Block _3_ _3_
+       DO_ACTION _1_  id_ACF_TurnLook
+DO_ACTION _4_ id_ACF_RiseGlowPullWav 0x id_BEH_JumpTickJumpH ""
+      CHANGE_TO_BEHAVIOR 0 "Go"
+   DECIDE_BY_WITH_AMONG 4 id_DCF_LightHumWalkDashClo
+       DataBlock 0
+DO_ACTION 2 id_ACF_TurnLook id_MSG_FallFallJu
+     DO_LOCAL_ACTION 3 id_ACF_TurnLook _16_ "ZYYZbacbbZY" id_PRN_RiseLowerC
+SET_MESSAGE_INTERACTOR 3 id_MSG_JumpOpenDoo SET_INTERACTOR_PARAM 2 id_SET_InteractorName "IntB"
+       Enable 2
+        DO_ACTION 1 id_ACF_LowerStopHumS
+     DO_ACTION  5 id_ACF_BoxCoinFetchTurnS -76.5416 4 4 DECLARE_BEHAVIOR&3 id_COB_PlayerPart_2 "b"
+ SET_MESSAGE_INTERACTOR 2 id_MSG_StepCl
+      CHANGE_TO_BEHAVIOR 1 _NO_BEH_CHANGE_
+  SET_COLLISION_INTERACTOR 3 id_COB_NodBeepSi id_PRN_Me
+        Enable 2
+   DO_ACTION 4 id_ACF_BallHopCloseSin 0x10 AA_WaveHands id_BEH_FallFallLampBee
+ DECIDE_BY_AMONG 2 id_DCF_GlowShakeGlowStepTur ADD_AGENDA_ITEM 2 id_AGD_RingBoxTurnR}}0
+   DECLARE_BEHAVIOR 4 /* c */
+id_BEH_WaveBlin,"Go"
+  SET_COLLISION_INTERACTOR 3 id_COB_PlayerPart_1 id_PRN_Me
+       Enable 0
+      SET_MESSAGE_INTERACTOR 3 id_MSG_BlinkBellKe
+CHANGE_TO_BEHAVIOR 1 "Go"
+   Enable 2 CHANGE_TO_BEHAVIOR _1_ "Go" DO_ACTION // c
+_4_ id_ACF_StepH _48_ _0_ id_DCF_FloatRiseShakeOpen
+       END_PLAN

@@ -1,0 +1,21 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "unused_local_reals_no_count.txt:2: error [compile/throw] (byte 29): Expected an argument enumerator.  First two args are id and string name.\n",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "grammar probe [unused_local_reals_no_count]",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "unused_local_reals_no_count.txt:2: error [compile/throw] (byte 29): Expected an argument enumerator.  First two args are id and string name.\n",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "unused_local_reals_no_count.txt:2: error [compile/throw] (byte 29): Expected an argument enumerator.  First two args are id and string name.",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

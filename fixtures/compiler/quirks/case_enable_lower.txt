@@ -1,0 +1,5 @@
+DECLARE_BEHAVIOR 3 id_BEH_StandStill "S"
+SET_MESSAGE_INTERACTOR 2 id_MSG_Initiate
+enable 1
+DO_ACTION 1 id_ACF_Probe
+END_PLAN

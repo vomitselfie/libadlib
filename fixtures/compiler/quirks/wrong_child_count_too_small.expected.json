@@ -1,0 +1,44 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "fbed02fa6804a0f8490de6a249ead79e9376d0352721f0907700ca849d0b822e",
+  "pbn_words": [
+    "00000010",
+    "abcdefff",
+    "00070000",
+    "00000001",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000069",
+    "00000074",
+    "00000053",
+    "00000074",
+    "00000069",
+    "0000006c",
+    "0000006c",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(1)",
+    "  7 /*id_BEH_StandStill*/",
+    "\"SitStill\"",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "As above: an under-count is emitted verbatim; trailing items become siblings at the parent level.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "fbed02fa6804a0f8490de6a249ead79e9376d0352721f0907700ca849d0b822e"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "fbed02fa6804a0f8490de6a249ead79e9376d0352721f0907700ca849d0b822e"
+  },
+  "adlibc_agrees": true
+}

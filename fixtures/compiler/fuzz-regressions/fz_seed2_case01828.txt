@@ -1,0 +1,14 @@
+DECLARE_BEHAVIOR 4 id_BEH_Signa "Run"
+    SET_MESSAGE_INTERACTOR 1 id_MSG_PushCountClo Enable
+   SET_NET_COLLISION_INTERACTOR _2_ DO_ACTION 3 id_ACF_PullCloseLookTu 11 id_ACF_PushBlinkRingS
+DO_NET_ACTION _4_ id_ACF_ShowText 8 id_ACF_SingGateCoi id_DCF_GateBlinkOpenCoinW
+       SET_MESSAGE_INTERACTOR 3 id_MSG_HumSinkBe
+      CHANGE_TO_BEHAVIOR 1 "b"
+     Enable 0x2 1 "b"
+      Block 2 Block 2
+ DECIDE_BY_AMONG 2 id_DCF_TickBeepFloatGateS
+  DO_NET_ACTION 2.0 id_ACF_TurnRingRunS 3
+      DO_ACTION 3 id_ACF_TurnLook "GenericTrackingViewpoint" id_MSG_TurnSignalTickCoinFloa
+DECIDE_BY_WITH_AMONG 4  id_DCF_BoxKeyLightLower
+  DataBlock 0 REMOVE_AGENDA_ITEM 1 id_AGD_RestLampStepG SET_TRACE 1 0x DECLARE_BEHAVIOR 2 id_BEH_StandStill "b"
+    END_PLAN

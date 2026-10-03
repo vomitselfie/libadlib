@@ -1,0 +1,53 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "9f9dd8f37433cbf0b4d45085b46e835b5ed4e64d00ce88474977fda941564a3b",
+  "pbn_words": [
+    "00000015",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00160000",
+    "00000002",
+    "abcdeffe",
+    "0000004e",
+    "0000004f",
+    "00000053",
+    "00000055",
+    "00000043",
+    "00000048",
+    "00000000",
+    "00000001",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  CHANGE_OF_PLAN(2)",
+    "    \"NOSUCH\"",
+    "    1",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "A numeric behaviour index needs no sibling source.",
+  "found_by": "grammar probe [cop_numeric]: A numeric behaviour index needs no sibling source.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "9f9dd8f37433cbf0b4d45085b46e835b5ed4e64d00ce88474977fda941564a3b"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "9f9dd8f37433cbf0b4d45085b46e835b5ed4e64d00ce88474977fda941564a3b"
+  },
+  "adlibc_agrees": true
+}

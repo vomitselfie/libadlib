@@ -1,0 +1,2 @@
+DECLARE_BEHAVIOR _51_ id_BEH_StandStill "S"
+END_PLAN

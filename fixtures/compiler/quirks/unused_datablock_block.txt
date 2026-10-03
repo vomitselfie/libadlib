@@ -1,0 +1,7 @@
+DECLARE_BEHAVIOR 3 id_BEH_StandStill "S"
+SET_MESSAGE_INTERACTOR 2 id_MSG_Initiate
+Enable 1
+DECIDE_BY_WITH_AMONG 3 id_DCF_Choose
+DataBlock 1 5
+Block 0
+END_PLAN

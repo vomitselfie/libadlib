@@ -1,0 +1,21 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "fz_seed1_vertical_tab.txt:3: error [compile/throw] (byte 79): Bad plan id value: id\u000b_PRN_Me",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "adlib_fuzz.py --seed 1: a token containing a vertical tab (not a separator) gives 'Bad plan id value: id\\u000b_PRN_Me'; the fuzzer split adlibc's stderr at the \\v (Python splitlines) and reported a mismatch. Fixed in the fuzzer; kept as a regression for diagnostics with \\v inside.",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "fz_seed1_vertical_tab.txt:3: error [compile/throw] (byte 79): Bad plan id value: id\u000b_PRN_Me",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "fz_seed1_vertical_tab.txt:3: error [compile/throw] (byte 79): Bad plan id value: id\u000b_PRN_Me",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

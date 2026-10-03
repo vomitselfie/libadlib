@@ -1,0 +1,21 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "msg_interactor_string.txt:3: error [compile/throw] (byte 72): Expected an id_MSG_ type id.\n",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "grammar probe [msg_interactor_string]",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "msg_interactor_string.txt:3: error [compile/throw] (byte 72): Expected an id_MSG_ type id.\n",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "msg_interactor_string.txt:3: error [compile/throw] (byte 72): Expected an id_MSG_ type id.",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

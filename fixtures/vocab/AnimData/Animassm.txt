@@ -1,0 +1,6 @@
+# Animation assemblies: <tab>Name<tab>Description (the first line is skipped)
+	AA_SitAndWait	assembly 0
+	AA_Stand_Std	assembly 1
+	AA_WalkToRun	duplicate name: the first one wins
+	AA_WalkToRun	assembly 2
+	AA_WaveHands	assembly 3

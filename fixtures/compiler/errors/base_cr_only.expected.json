@@ -1,0 +1,21 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "base_cr_only.txt: error [write/no-end]: no END_PLAN (0xFFFF0000) in output; the original WritePbn would overrun its buffer",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "grammar probe [base_cr_only]: Bare CR line ends (old Mac).",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "no-end",
+    "diagnostic": "base_cr_only.txt: error [write/no-end]: no END_PLAN (0xFFFF0000) in output; the original WritePbn would overrun its buffer",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "base_cr_only.txt: error [write/no-end]: no END_PLAN (0xFFFF0000) in output; the original WritePbn would overrun its buffer",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

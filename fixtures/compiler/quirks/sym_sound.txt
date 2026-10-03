@@ -1,0 +1,3 @@
+DECLARE_BEHAVIOR 3 id_BEH_StandStill "S"
+DO_ACTION 2 id_ACF_PlayTone id_SND_Whistle1
+END_PLAN

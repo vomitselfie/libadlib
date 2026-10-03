@@ -1,0 +1,4 @@
+DECLARE_BEHAVIOR 3 id_BEH_StandStill "S"
+SET_LOC_COLLISION_INTERACTOR 3 id_COB_PlayerPart_0 id_COB_PlayerPart_1
+Enable 0
+END_PLAN

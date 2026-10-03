@@ -1,0 +1,46 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "8494562b5327161701ae2fe674ce1f8ab22663a76346a833735945f6f2434864",
+  "pbn_words": [
+    "0000000e",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00180000",
+    "00000002",
+    "00000007",
+    "00000002",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  DO_ACTION(2)",
+    "    7 /*id_ACF_Probe*/",
+    "    2",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "AA_WalkToRun appears twice in Animassm.txt; the first value wins.",
+  "found_by": "grammar probe [sym_duplicate_first_wins]: AA_WalkToRun appears twice in Animassm.txt; the first value wins.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "8494562b5327161701ae2fe674ce1f8ab22663a76346a833735945f6f2434864"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "8494562b5327161701ae2fe674ce1f8ab22663a76346a833735945f6f2434864"
+  },
+  "adlibc_agrees": true
+}

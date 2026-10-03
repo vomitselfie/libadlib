@@ -1,0 +1,44 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "51ba536f9c16d9f634bc9c3260b35cce3ba8ac37084ccd44ea026bff1717688c",
+  "pbn_words": [
+    "00000010",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000069",
+    "00000074",
+    "00000053",
+    "00000074",
+    "00000069",
+    "0000006c",
+    "0000006c",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"SitStill\"",
+    "  END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "Counts are ordinary values written by the author; the compiler performs no arity checking, so an over-count is emitted verbatim and yields a malformed tree (the runtime would consume following nodes as children).",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "51ba536f9c16d9f634bc9c3260b35cce3ba8ac37084ccd44ea026bff1717688c"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "51ba536f9c16d9f634bc9c3260b35cce3ba8ac37084ccd44ea026bff1717688c"
+  },
+  "adlibc_agrees": true
+}

@@ -1,0 +1,45 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "32e782fc1c995604a2113b6b9199e85db23a8d14df036194fa6aec333f70cd3c",
+  "pbn_words": [
+    "0000000e",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00180000",
+    "00000002",
+    "00000007",
+    "3fc00000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  DO_ACTION(2)",
+    "    7 /*id_ACF_Probe*/",
+    "    1.5f",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "found_by": "grammar probe [num_float]",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "32e782fc1c995604a2113b6b9199e85db23a8d14df036194fa6aec333f70cd3c"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "32e782fc1c995604a2113b6b9199e85db23a8d14df036194fa6aec333f70cd3c"
+  },
+  "adlibc_agrees": true
+}

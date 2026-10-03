@@ -1,0 +1,36 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "1eb5c38eebd1c85092daa922fe5445c6a533f28f72418d5cda301199aafc7e3f",
+  "pbn_words": [
+    "00000007",
+    "00000002",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "2",
+    "7",
+    "\"S\"",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "'{' is an ordinary character: {DECLARE_BEHAVIOR is an unknown word.",
+  "found_by": "grammar probe [brace_glued_open]: '{' is an ordinary character: {DECLARE_BEHAVIOR is an unknown word.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "1eb5c38eebd1c85092daa922fe5445c6a533f28f72418d5cda301199aafc7e3f"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "1eb5c38eebd1c85092daa922fe5445c6a533f28f72418d5cda301199aafc7e3f"
+  },
+  "adlibc_agrees": true
+}

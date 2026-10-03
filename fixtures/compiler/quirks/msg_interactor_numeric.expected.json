@@ -1,0 +1,44 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "b3336604643a09f4c5b48fa9bbd17e40ab45f52e3285139e79f1b1758b961c55",
+  "pbn_words": [
+    "0000000d",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00050000",
+    "00000001",
+    "00000005",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  SET_MESSAGE_INTERACTOR(1)",
+    "    5 /*id_MSG_Hop*/",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "Numeric message id passes prescan.",
+  "found_by": "grammar probe [msg_interactor_numeric]: Numeric message id passes prescan.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "b3336604643a09f4c5b48fa9bbd17e40ab45f52e3285139e79f1b1758b961c55"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "b3336604643a09f4c5b48fa9bbd17e40ab45f52e3285139e79f1b1758b961c55"
+  },
+  "adlibc_agrees": true
+}

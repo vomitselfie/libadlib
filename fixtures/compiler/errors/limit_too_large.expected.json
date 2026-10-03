@@ -1,0 +1,21 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "limit_too_large.txt:3: error [read/throw] (byte 90): This plan file is too large.  Why not break it up into separate plans?\n",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "grammar probe [limit_too_large]: Source >= 79999 bytes.",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "limit_too_large.txt:3: error [read/throw] (byte 90): This plan file is too large.  Why not break it up into separate plans?\n",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "limit_too_large.txt:3: error [read/throw] (byte 90): This plan file is too large.  Why not break it up into separate plans?",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

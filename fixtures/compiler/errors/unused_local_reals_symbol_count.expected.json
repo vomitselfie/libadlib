@@ -1,0 +1,21 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "unused_local_reals_symbol_count.txt:1: error [compile/throw] (byte 30): expected arg enumeration of localvars.",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "grammar probe [unused_local_reals_symbol_count]: Count must be numeric.",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "unused_local_reals_symbol_count.txt:1: error [compile/throw] (byte 30): expected arg enumeration of localvars.",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "unused_local_reals_symbol_count.txt:1: error [compile/throw] (byte 30): expected arg enumeration of localvars.",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

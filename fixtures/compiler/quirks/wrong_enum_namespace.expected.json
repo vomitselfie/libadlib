@@ -1,0 +1,44 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "052bead8b1178dcddae7c7701e00fcfcf7b5300976df70612fb53ab3ddaa2815",
+  "pbn_words": [
+    "00000010",
+    "abcdefff",
+    "00070000",
+    "00000002",
+    "0000000d",
+    "abcdeffe",
+    "00000053",
+    "00000069",
+    "00000074",
+    "00000053",
+    "00000074",
+    "00000069",
+    "0000006c",
+    "0000006c",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(2)",
+    "  13",
+    "  \"SitStill\"",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "Identifiers resolve to their integer value in whichever enum declares them; the compiler does no namespace/type check, so id_MSG_Initiate in a behaviour-type slot emits that message's number.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "052bead8b1178dcddae7c7701e00fcfcf7b5300976df70612fb53ab3ddaa2815"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "052bead8b1178dcddae7c7701e00fcfcf7b5300976df70612fb53ab3ddaa2815"
+  },
+  "adlibc_agrees": true
+}

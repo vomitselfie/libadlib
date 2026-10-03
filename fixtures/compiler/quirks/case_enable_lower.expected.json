@@ -1,0 +1,52 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "6a95461efba8e012028bad26397e181f718fba82328a4172c5e3e57c7befd6ac",
+  "pbn_words": [
+    "00000012",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00050000",
+    "00000002",
+    "0000000d",
+    "00000001",
+    "abcdefff",
+    "00180000",
+    "00000001",
+    "00000007",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  SET_MESSAGE_INTERACTOR(2)",
+    "    13 /*id_MSG_Initiate*/",
+    "    1",
+    "DO_ACTION(1)",
+    "  7 /*id_ACF_Probe*/",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "enable (lower case) is an unknown word: its count 1 is emitted as a bare leaf.",
+  "found_by": "grammar probe [case_enable_lower]: enable (lower case) is an unknown word: its count 1 is emitted as a bare leaf.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "6a95461efba8e012028bad26397e181f718fba82328a4172c5e3e57c7befd6ac"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "6a95461efba8e012028bad26397e181f718fba82328a4172c5e3e57c7befd6ac"
+  },
+  "adlibc_agrees": true
+}

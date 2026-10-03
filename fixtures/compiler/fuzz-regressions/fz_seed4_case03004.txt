@@ -1,0 +1,4 @@
+DECLARE_BEHAVIOR 3 id_BEH_ClapWavePullFl "S" "q_q_q_"
+     DO_ACTION 2 id_ACF_SendMessage ""x "x"y"
+       DO_ACTION 2 id_ACF_RaiseD " "x"y" DO_ACTION 2 id_ACF_ReadyOpenHopDoorS "ab
+    END_PLAN

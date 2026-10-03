@@ -1,0 +1,69 @@
+// VENDING.txt -- the vending machine of Rosen & Duisberg's 1996 ADLIB article, as ADLIB source.
+// libadlib's hello world. CMake compiles it with adlibc at build time:
+//
+//     adlibc --enumids VENDING.H --texts VENDTEXT.LST -o VENDING.PBN VENDING.txt
+//
+// How to read it (docs/language.md):
+//   - every keyword is followed by the number of children it has; a nested statement, a value
+//     and a string each count as one child (END_PLAN has no count);
+//   - names come from this game's VENDING.H (id_MSG_Coin, id_ACF_Display ...) and VENDTEXT.LST
+//     (id_TXT_T_Welcome ...); id_PRN_ names are pronouns, resolved by the game;
+//   - behaviours are numbered 0, 1, 2 in declaration order and referred to by name: the name must
+//     be the token right after CHANGE_TO_BEHAVIOR's count;
+//   - comments start with //, /*, ( or # and always run to the end of the line.
+
+DECLARE_BEHAVIOR 5 id_BEH_Machine "Idle"
+    SET_MESSAGE_INTERACTOR 2 id_MSG_Initiate        // sent to itself on entering a behaviour
+        Enable 1
+            DO_ACTION 2 id_ACF_Display id_TXT_T_Welcome
+    SET_MESSAGE_INTERACTOR 3 id_MSG_Coin
+        CHANGE_TO_BEHAVIOR 1 "HasCredit"            // the behaviour to switch to afterwards
+        Enable 1
+            DO_ACTION 1 id_ACF_AddCredit
+    SET_MESSAGE_INTERACTOR 2 id_MSG_Select
+        Enable 1
+            DO_ACTION 2 id_ACF_Display id_TXT_T_InsertCoins
+
+DECLARE_BEHAVIOR 6 id_BEH_Machine "HasCredit"
+    SET_MESSAGE_INTERACTOR 2 id_MSG_Initiate
+        Enable 1
+            DO_ACTION 2 id_ACF_Display id_TXT_T_Credit
+    SET_MESSAGE_INTERACTOR 2 id_MSG_Coin
+        Enable 2
+            DO_ACTION 1 id_ACF_AddCredit
+            DO_ACTION 2 id_ACF_Display id_TXT_T_Credit
+    // A CHANGE_TO_BEHAVIOR inside an action list overwrites the interactor's target for good
+    // (an ADLIB quirk), so every branch says where to go.
+    SET_MESSAGE_INTERACTOR 2 id_MSG_Select
+        Enable 1
+            DECIDE_BY_AMONG 3 id_DCF_EnoughCredit     // the decision returns the branch: 0 = no
+                Block 2
+                    DO_ACTION 2 id_ACF_Display id_TXT_T_NeedMore
+                    CHANGE_TO_BEHAVIOR 1 _NO_BEH_CHANGE_
+                DECIDE_BY_AMONG 3 id_DCF_InStock
+                    Block 3
+                        DO_ACTION 2 id_ACF_Display id_TXT_T_SoldOut
+                        DO_ACTION 1 id_ACF_ReturnChange
+                        CHANGE_TO_BEHAVIOR 1 "Idle"
+                    CHANGE_TO_BEHAVIOR 1 "Vending"  // forward references are fine
+    SET_MESSAGE_INTERACTOR 3 id_MSG_Refund
+        CHANGE_TO_BEHAVIOR 1 "Idle"
+        Enable 1
+            DO_ACTION 1 id_ACF_ReturnChange
+
+DECLARE_BEHAVIOR 5 id_BEH_Machine "Vending"
+    SET_MESSAGE_INTERACTOR 2 id_MSG_Initiate
+        Enable 2
+            DO_ACTION 1 id_ACF_Dispense
+            SET_TIMEOUTMSG 3 100 id_MSG_VendDone id_PRN_Me   // in 100/100 s, to itself
+    SET_MESSAGE_INTERACTOR 2 id_MSG_Coin
+        Enable 1
+            DO_ACTION 2 id_ACF_Display id_TXT_T_Busy
+    SET_MESSAGE_INTERACTOR 3 id_MSG_VendDone
+        CHANGE_TO_BEHAVIOR 1 "Idle"
+        Enable 3
+            DO_ACTION 3 id_ACF_SendMessage id_PRN_Customer id_MSG_Dispensed
+            DO_ACTION 2 id_ACF_Display id_TXT_T_ThankYou
+            DO_ACTION 1 id_ACF_ReturnChange
+
+END_PLAN

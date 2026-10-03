@@ -1,0 +1,4 @@
+DECLARE_LOCAL_REALS 2 "Speed" "Accel"
+DECLARE_BEHAVIOR 3 id_BEH_StandStill "S"
+DO_ACTION 3 id_ACF_Probe "Accel" "Speed"
+END_PLAN

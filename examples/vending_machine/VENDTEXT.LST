@@ -1,0 +1,9 @@
+# Display texts: <name> <text...>  (ids = order, loaded into the "Texts" namespace)
+T_Welcome     Welcome! Snacks cost 2 coins.
+T_Credit      Credit:
+T_NeedMore    Not enough credit, insert another coin.
+T_InsertCoins Please insert coins first.
+T_SoldOut     Sorry, sold out.
+T_Busy        Busy, please wait.
+T_ThankYou    Thank you, enjoy!
+T_Yum         Yum!

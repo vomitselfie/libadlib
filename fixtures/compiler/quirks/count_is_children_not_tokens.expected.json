@@ -1,0 +1,56 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "71bd21026c9773264d96c5e3df4e70c404bf9e91518cccae5eabf66667fc8286",
+  "pbn_words": [
+    "00000018",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00180000",
+    "00000002",
+    "00000010",
+    "abcdeffe",
+    "00000074",
+    "00000077",
+    "0000006f",
+    "00000020",
+    "00000077",
+    "0000006f",
+    "00000072",
+    "00000064",
+    "00000073",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  DO_ACTION(2)",
+    "    16 /*id_ACF_ShowText*/",
+    "    \"two words\"",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "Count = number of child items (a string counts once, not per dword).",
+  "found_by": "grammar probe [count_is_children_not_tokens]: Count = number of child items (a string counts once, not per dword).",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "71bd21026c9773264d96c5e3df4e70c404bf9e91518cccae5eabf66667fc8286"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "71bd21026c9773264d96c5e3df4e70c404bf9e91518cccae5eabf66667fc8286"
+  },
+  "adlibc_agrees": true
+}

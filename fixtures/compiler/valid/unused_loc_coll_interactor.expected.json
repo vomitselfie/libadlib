@@ -1,0 +1,49 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "c576f71c3c455fb6e3e02ec931b9d4084988763781b26863a48b37c60cc51dae",
+  "pbn_words": [
+    "00000011",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00030001",
+    "00000003",
+    "00000001",
+    "00000002",
+    "abcdefff",
+    "80000000",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  SET_LOC_COLLISION_INTERACTOR(3)",
+    "    1 /*id_COB_PlayerPart_0*/",
+    "    2 /*id_COB_PlayerPart_1*/",
+    "    Enable(0)",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "found_by": "grammar probe [unused_loc_coll_interactor]",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "c576f71c3c455fb6e3e02ec931b9d4084988763781b26863a48b37c60cc51dae"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "c576f71c3c455fb6e3e02ec931b9d4084988763781b26863a48b37c60cc51dae"
+  },
+  "adlibc_agrees": true
+}

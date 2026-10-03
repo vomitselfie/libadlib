@@ -1,0 +1,38 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394",
+  "pbn_words": [
+    "00000009",
+    "abcdefff",
+    "00070000",
+    "00000002",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_BEHAVIOR(2)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "'}' ends a token and is returned as its own (ignored) token.",
+  "found_by": "grammar probe [brace_glued_close]: '}' ends a token and is returned as its own (ignored) token.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "267d0e4578dc9aae311da285498873de98541c7e3eb0cf05bf52a05162436394"
+  },
+  "adlibc_agrees": true
+}

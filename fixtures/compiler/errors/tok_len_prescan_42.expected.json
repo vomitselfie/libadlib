@@ -1,0 +1,20 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "tok_len_prescan_42.txt:2: error [compile/crash] (byte 81): string token of 42 bytes (40 or more, quotes included) overflows a 40-byte buffer; the original compiler would crash",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "adlibc (the original compiler crashes on this input)",
+  "found_by": "grammar probe [tok_len_prescan_42]: Behaviour-name token of 42 bytes (prescan buffer 40, name slot 32).",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "fault",
+    "diagnostic": "tok_len_prescan_42.txt:2: error [compile/fault] (byte 81): emulation fault Invalid memory fetch (UC_ERR_FETCH_UNMAPPED) at eip=0x0",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "tok_len_prescan_42.txt:2: error [compile/crash] (byte 81): string token of 42 bytes (40 or more, quotes included) overflows a 40-byte buffer; the original compiler would crash",
+    "pbn_sha256": null
+  }
+}

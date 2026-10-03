@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  core:
+    name: build and test (${{ matrix.cc }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - cc: gcc
+            cxx: g++
+          - cc: clang
+            cxx: clang++
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Ninja
+        run: sudo apt-get update && sudo apt-get install -y ninja-build
+      - name: Configure
+        env:
+          CC: ${{ matrix.cc }}
+          CXX: ${{ matrix.cxx }}
+        run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+      - name: Build
+        run: cmake --build build
+      - name: Tests
+        run: ctest --test-dir build --output-on-failure
+      - name: Install and consume the CMake package
+        run: |
+          cmake --install build --prefix "$PWD/stage"
+          mkdir consumer && cat > consumer/CMakeLists.txt <<'CMAKE'
+          cmake_minimum_required(VERSION 3.20)
+          project(consumer CXX)
+          find_package(adlib 0.1 CONFIG REQUIRED)
+          add_executable(consumer main.cpp)
+          target_link_libraries(consumer PRIVATE adlib::adlib adlib::tools)
+          CMAKE
+          printf '#include "adlib/adlib.h"\n#include "adlib/version.h"\n#include <cstdio>\nint main(){ std::printf("%%s\\n", adlib::kVersion); }\n' > consumer/main.cpp
+          cmake -S consumer -B consumer/build -G Ninja -DCMAKE_PREFIX_PATH="$PWD/stage"
+          cmake --build consumer/build
+          ./consumer/build/consumer
+
+  emscripten:
+    name: library (Emscripten)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mymindstorm/setup-emsdk@v14
+      - name: Install Ninja
+        run: sudo apt-get update && sudo apt-get install -y ninja-build
+      - name: Configure
+        run: emcmake cmake -S . -B build-web -G Ninja -DCMAKE_BUILD_TYPE=Release -DADLIB_BUILD_TOOLS=OFF -DADLIB_BUILD_TESTS=OFF -DADLIB_BUILD_EXAMPLES=OFF
+      - name: Build
+        run: cmake --build build-web

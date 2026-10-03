@@ -1,0 +1,36 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "1eb5c38eebd1c85092daa922fe5445c6a533f28f72418d5cda301199aafc7e3f",
+  "pbn_words": [
+    "00000007",
+    "00000002",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "2",
+    "7",
+    "\"S\"",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "Prescan is case-insensitive (stricmp) but the emitter is not: the node marker vanishes.",
+  "found_by": "grammar probe [case_declare_lower]: Prescan is case-insensitive (stricmp) but the emitter is not: the node marker vanishes.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "1eb5c38eebd1c85092daa922fe5445c6a533f28f72418d5cda301199aafc7e3f"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "1eb5c38eebd1c85092daa922fe5445c6a533f28f72418d5cda301199aafc7e3f"
+  },
+  "adlibc_agrees": true
+}

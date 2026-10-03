@@ -1,0 +1,21 @@
+{
+  "outcome": "rejected",
+  "diagnostic": "cop_unknown_beh.txt:3: error [compile/throw] (byte 74): Could not find behavior named: Zzz",
+  "pbn_sha256": null,
+  "pbn_words": null,
+  "tree": null,
+  "expected_from": "oracle",
+  "found_by": "grammar probe [cop_unknown_beh]",
+  "oracle": {
+    "outcome": "rejected",
+    "kind": "throw",
+    "diagnostic": "cop_unknown_beh.txt:3: error [compile/throw] (byte 74): Could not find behavior named: Zzz",
+    "pbn_sha256": null
+  },
+  "adlibc": {
+    "outcome": "rejected",
+    "diagnostic": "cop_unknown_beh.txt:3: error [compile/throw] (byte 74): Could not find behavior named: Zzz",
+    "pbn_sha256": null
+  },
+  "adlibc_agrees": true
+}

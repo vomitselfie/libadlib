@@ -1,0 +1,9 @@
+// CUSTOMER.txt -- the vending machine's customer (see VENDING.txt). Compiled by adlibc at build
+// time: adlibc --enumids VENDING.H --texts VENDTEXT.LST -o CUSTOMER.PBN CUSTOMER.txt
+
+DECLARE_BEHAVIOR 3 id_BEH_Person "Waiting"
+    SET_MESSAGE_INTERACTOR 2 id_MSG_Dispensed
+        Enable 1
+            DO_ACTION 2 id_ACF_Say id_TXT_T_Yum
+
+END_PLAN

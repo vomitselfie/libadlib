@@ -1,0 +1,33 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "4f720fd7fc29b08bb769490b3aeae67bbc86fa3b7f648f87bf69902e17ae3156",
+  "pbn_words": [
+    "0000000b",
+    "abcdefff",
+    "00070000",
+    "00000002",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": null,
+  "expected_from": "oracle",
+  "mechanism": "Leaves after END_PLAN are counted in the header but not written.",
+  "found_by": "grammar probe [base_tokens_after_end]: Leaves after END_PLAN are counted in the header but not written.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "4f720fd7fc29b08bb769490b3aeae67bbc86fa3b7f648f87bf69902e17ae3156"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "4f720fd7fc29b08bb769490b3aeae67bbc86fa3b7f648f87bf69902e17ae3156"
+  },
+  "adlibc_agrees": true
+}

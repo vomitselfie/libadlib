@@ -1,0 +1,33 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "1b891f5345e09b98c797b7df5dc495171710afb8c3d9d7f6e0f05820f4d16386",
+  "pbn_words": [
+    "00000009",
+    "abcdefff",
+    "00070000",
+    "ffffffff",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": null,
+  "expected_from": "oracle",
+  "mechanism": "No validation of counts.",
+  "found_by": "grammar probe [count_negative]: No validation of counts.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "1b891f5345e09b98c797b7df5dc495171710afb8c3d9d7f6e0f05820f4d16386"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "1b891f5345e09b98c797b7df5dc495171710afb8c3d9d7f6e0f05820f4d16386"
+  },
+  "adlibc_agrees": true
+}

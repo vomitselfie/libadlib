@@ -1,0 +1,56 @@
+{
+  "outcome": "accepted",
+  "diagnostic": null,
+  "pbn_sha256": "8abf963b4bd56d5eb0229d73a2be34e8d8476f2e422aaa8144053a403ecb56f0",
+  "pbn_words": [
+    "00000014",
+    "abcdefff",
+    "00160001",
+    "00000002",
+    "edcb0000",
+    "edcb0001",
+    "abcdefff",
+    "00070000",
+    "00000003",
+    "00000007",
+    "abcdeffe",
+    "00000053",
+    "00000000",
+    "abcdefff",
+    "00180000",
+    "00000003",
+    "00000007",
+    "edcb0001",
+    "edcb0000",
+    "abcdefff",
+    "ffff0000"
+  ],
+  "tree": [
+    "DECLARE_LOCAL_REALS(2)",
+    "  LOCAL_REAL[0]",
+    "  LOCAL_REAL[1]",
+    "DECLARE_BEHAVIOR(3)",
+    "  7 /*id_BEH_StandStill*/",
+    "  \"S\"",
+    "  DO_ACTION(3)",
+    "    7 /*id_ACF_Probe*/",
+    "    LOCAL_REAL[1]",
+    "    LOCAL_REAL[0]",
+    "END_PLAN"
+  ],
+  "expected_from": "oracle",
+  "mechanism": "Declared names (even in the declaration itself) compile to 0xEDCB|index.",
+  "found_by": "grammar probe [unused_local_reals]: Declared names (even in the declaration itself) compile to 0xEDCB|index.",
+  "oracle": {
+    "outcome": "accepted",
+    "kind": null,
+    "diagnostic": null,
+    "pbn_sha256": "8abf963b4bd56d5eb0229d73a2be34e8d8476f2e422aaa8144053a403ecb56f0"
+  },
+  "adlibc": {
+    "outcome": "accepted",
+    "diagnostic": null,
+    "pbn_sha256": "8abf963b4bd56d5eb0229d73a2be34e8d8476f2e422aaa8144053a403ecb56f0"
+  },
+  "adlibc_agrees": true
+}
