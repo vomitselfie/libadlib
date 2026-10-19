@@ -42,13 +42,16 @@ target_include_directories(adlib PUBLIC
   $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/generated/include>
   $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 target_compile_features(adlib PUBLIC cxx_std_17)
-target_compile_options(adlib PRIVATE -Wall -Wextra -Wno-unused-parameter)
 # Lockstep determinism (the runtime does a little float math, e.g. id_SET_InteractorLatency):
 # no FMA contraction, no fast-math, SSE on x86. Hosts that need bit-identical simulation across
-# builds should use the same flags.
-target_compile_options(adlib PRIVATE -ffp-contract=off -fno-fast-math)
-if(CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64|AMD64" AND NOT EMSCRIPTEN)
-  target_compile_options(adlib PRIVATE -mfpmath=sse -msse2)
+# builds should use the same flags. MSVC's /fp:precise contracts nothing and x64 is always SSE2.
+if(MSVC)
+  target_compile_options(adlib PRIVATE /W4 /wd4100 /fp:precise)
+else()
+  target_compile_options(adlib PRIVATE -Wall -Wextra -Wno-unused-parameter -ffp-contract=off -fno-fast-math)
+  if(CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64|AMD64" AND NOT EMSCRIPTEN)
+    target_compile_options(adlib PRIVATE -mfpmath=sse -msse2)
+  endif()
 endif()
 set_target_properties(adlib PROPERTIES VERSION ${PROJECT_VERSION} EXPORT_NAME adlib)
 
@@ -59,7 +62,11 @@ if(ADLIB_BUILD_TOOLS)
     src/tools/trace.cpp)
   add_library(adlib::tools ALIAS adlib_tools)
   target_link_libraries(adlib_tools PUBLIC adlib)
-  target_compile_options(adlib_tools PRIVATE -Wall -Wextra -Wno-unused-parameter)
+  if(MSVC)
+    target_compile_options(adlib_tools PRIVATE /W4 /wd4100)
+  else()
+    target_compile_options(adlib_tools PRIVATE -Wall -Wextra -Wno-unused-parameter)
+  endif()
   set_target_properties(adlib_tools PROPERTIES EXPORT_NAME tools)
 
   add_executable(adlibc tools/adlibc.cpp)

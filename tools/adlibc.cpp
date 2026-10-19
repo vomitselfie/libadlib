@@ -5,7 +5,7 @@
 //          [--compat=adlib|adlib1996] [--plans-dir DIR] [--strict] [--Werror] [-o out.pbn] [-q] file.txt
 #include <cstdio>
 #include <cstring>
-#include <dirent.h>
+#include <filesystem>
 #include <fstream>
 #include <sstream>
 #include <string>
@@ -58,12 +58,12 @@ std::string lower(std::string s) {
 }
 
 std::optional<std::string> findPlan(const std::string &dir, const std::string &name) {
-    DIR *h = opendir(dir.empty() ? "." : dir.c_str());
-    if (!h) return std::nullopt;
     std::string want = lower(name + ".txt"), found;
-    while (dirent *e = readdir(h))
-        if (lower(e->d_name) == want) { found = e->d_name; break; }
-    closedir(h);
+    std::error_code ec;
+    for (const auto &e : std::filesystem::directory_iterator(dir.empty() ? "." : dir, ec)) {
+        const std::string fileName = e.path().filename().string();
+        if (lower(fileName) == want) { found = fileName; break; }
+    }
     if (found.empty()) return std::nullopt;
     std::string text;
     if (!readFile((dir.empty() ? "." : dir) + "/" + found, text)) return std::nullopt;

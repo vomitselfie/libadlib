@@ -16,7 +16,9 @@ struct PlanError : std::runtime_error {
     using std::runtime_error::runtime_error;
 };
 
+#if defined(__GNUC__)
 std::string fmt(const char *f, ...) __attribute__((format(printf, 1, 2)));
+#endif
 std::string fmt(const char *f, ...) {
     char buf[512];
     va_list ap;

@@ -45,6 +45,18 @@ jobs:
           cmake --build consumer/build
           ./consumer/build/consumer
 
+  windows:
+    name: build and test (MSVC)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure
+        run: cmake -S . -B build
+      - name: Build
+        run: cmake --build build --config Release
+      - name: Tests
+        run: ctest --test-dir build -C Release --output-on-failure
+
   emscripten:
     name: library (Emscripten)
     runs-on: ubuntu-latest

@@ -9,7 +9,7 @@
 #include <algorithm>
 #include <cstdio>
 #include <cstring>
-#include <dirent.h>
+#include <filesystem>
 #include <fstream>
 #include <map>
 #include <memory>
@@ -41,12 +41,10 @@ bool readFile(const std::string &p, std::string &out) {
 }
 std::vector<std::string> listDir(const std::string &d, const std::string &ext) {
     std::vector<std::string> v;
-    if (DIR *h = opendir(d.c_str())) {
-        while (dirent *e = readdir(h)) {
-            std::string n = e->d_name;
-            if (n.size() > ext.size() && n.compare(n.size() - ext.size(), ext.size(), ext) == 0) v.push_back(n);
-        }
-        closedir(h);
+    std::error_code ec;
+    for (const auto &e : std::filesystem::directory_iterator(d, ec)) {
+        std::string n = e.path().filename().string();
+        if (n.size() > ext.size() && n.compare(n.size() - ext.size(), ext.size(), ext) == 0) v.push_back(n);
     }
     std::sort(v.begin(), v.end());
     return v;

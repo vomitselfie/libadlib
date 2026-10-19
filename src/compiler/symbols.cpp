@@ -1,6 +1,6 @@
 // CPlanCompiler_ctor (0x487790) tables and CPlanCompiler_LoadSymbols (0x48a240), emulated.
 #include <cstdio>
-#include <dirent.h>
+#include <filesystem>
 #include <fstream>
 #include <sstream>
 #include <stdexcept>
@@ -31,23 +31,21 @@ const CompilerKeyword kKeywordTable[] = {
 bool readFileCI(const std::string &dir, const std::string &name, std::string &out) {
     // Case-insensitive lookup of `name` (may contain one '/' level) under dir.
     std::string d = dir, n = name;
+    auto findCI = [](const std::string &in, const std::string &want) {
+        std::error_code ec;
+        for (const auto &e : std::filesystem::directory_iterator(in, ec)) {
+            const std::string fileName = e.path().filename().string();
+            if (msvcStricmp(fileName.c_str(), want.c_str()) == 0) return fileName;
+        }
+        return std::string();
+    };
     size_t slash = n.find('/');
     if (slash != std::string::npos) {
-        std::string sub;
-        DIR *h = opendir(d.c_str());
-        if (!h) return false;
-        while (dirent *e = readdir(h))
-            if (msvcStricmp(e->d_name, n.substr(0, slash).c_str()) == 0) { sub = e->d_name; break; }
-        closedir(h);
+        std::string sub = findCI(d, n.substr(0, slash));
         if (sub.empty()) return false;
         return readFileCI(d + "/" + sub, n.substr(slash + 1), out);
     }
-    DIR *h = opendir(d.c_str());
-    if (!h) return false;
-    std::string found;
-    while (dirent *e = readdir(h))
-        if (msvcStricmp(e->d_name, n.c_str()) == 0) { found = e->d_name; break; }
-    closedir(h);
+    std::string found = findCI(d, n);
     if (found.empty()) return false;
     std::ifstream f(d + "/" + found, std::ios::binary);
     if (!f) return false;

@@ -1,0 +1,2 @@
+# The compiler fixtures are byte exact: expected diagnostics give byte offsets into them.
+fixtures/** -text
